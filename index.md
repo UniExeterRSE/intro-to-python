@@ -6,31 +6,43 @@ title: Course Information
 
 ## Overview
 
-Insert description paragraph
+Welcome to Intro to Python! Python is one of the most popular general-purpose programming languages around. It is used in a huge range of applications, from building systems incorporating cutting-edge machine learning, such as in self-driving cars, to building web applications with hundreds of millions of users, as seen in Instagram.
 
-## This course will cover:  
+As researchers, we use Python for all manner of tasks, from data analysis, to automation, to prototyping software, to creating enaging visuals for websites and publications. Like you, we started our journey into Python learning the basics, building a strong foundation for achieving these more complex tasks. This introductory course will teach you these basics, and get you up to speed on your own programming journeys.
 
-- Bullet point learning objectives
+## Course objectives
+
+This course will enable you to:
+
+- Understand and declare the basic data types in Python
+- Understand the basic principles of control flow and for loops
+- Describe what a function is and define one that takes user-specified parameters
+- Perform simple data analysis/visualisation of a table of data
+- Recognise concepts in other programming languages.
+
+...and hopefully, get you excited about programming!
 
 ## Pre-requisite knowledge
 
-Specify as either essential or preferable, and try to relate to courses we provide and their learning objectives.
+No pre-requesite knowledge needed. However, course attendees will have to follow our setup guide to install Python and JupyterLab, which we will use for the course. Don't worry, we will help you with this!
 
-## Workshop Format
+## Workshop format
 
-This a hybrid workshop run over XX sessions. The [schedule can be found here](https://uniexeterrse.github.io/UoE-workshop-template/schedule.html). 
+This a hybrid workshop run over 2 sessions.
 
 ## Upcoming course dates
 
-| Dates | Time  | Venue | Sign up link |
-|--- |--- |--- | --- |
-| TBC |  | | |
+|Session name | Dates | Time  | Venue | Sign up link |
+|--- |--- |--- |--- | --- |
+| Drop-in setup session: |XXX November 2022 | XXX | Online? |   |
+| Session 1 | 16th November 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]() |
+| Session 2 | 23rd November 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]() |
 
-Registration for this course is handled by [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/)
+Registration for this course is handled by the folks at [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/).
 
 ## Set-up instructions for attendees
 
-If you have registered for this course you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/workshop-template-test/setup.html) 
+If you have registered for this course, you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/workshop-template-test/setup.html). 
 
 ## Start course
 
@@ -42,7 +54,7 @@ On completion of these course you will be invited to join a network of other par
 
 ## Feedback
 
-Please remember to complete a feedback survey. Our workshops are under continual review and your experiences, suggestions and criticism are invaluable for shaping the diretcion of this initiative. This is especially important if you complete the materials in your own time as it enables us to measure impact. If you have ideas on other courses you would like to see then please contact Eilis Hannon e.j.hannon@exeter.ac.uk.
+Please remember to complete a feedback survey. Our workshops are under continual review and your experiences, suggestions and criticism are invaluable for shaping the direction of this initiative. This is especially important if you complete the materials in your own time as it enables us to measure impact. If you have ideas on other courses you would like to see then please contact Eilis Hannon, at: e.j.hannon@exeter.ac.uk.
 
 ## Join us
 
@@ -50,6 +62,8 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 ## Acknowledgements
 
-This course was adapted from XXX and has been developed by the University of Exeter Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/UoE-workshop-template/acknowledgements.html) who are anthuastic about sharing their skills with the wider research community. It;s provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support it's long term sustainablity then please take the time to complete our feedback survey, recommend it to your collegues, and enthuse about it to your senior leadership team. 
+This course was adapted from the Software Carpentries [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/). It has been developed by the University of Exeter Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/UoE-workshop-template/acknowledgements.html) who are anthuastic about sharing their skills with the wider research community.
+
+Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support its long term sustainablity then please take the time to complete our feedback survey, recommend it to your collegues, and enthuse about it to your senior leadership team!
 
 This workshop is brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
