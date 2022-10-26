@@ -1,0 +1,36 @@
+# Basic options
+title: Workshop Name
+short_name: workshop-name
+developers: [A name]
+description: One sentence description of workshop.
+n_sessions: 3
+prereq: NA
+url: https://uniexeterrse.github.io/repo-name
+
+# Specify that things in the episodes collection should be output.
+collections:
+  episodes:
+    output: true
+    permalink: /:path/index.html
+    sort_by: lesson
+
+# Set the default layout for things in the episodes collection.
+defaults:
+  - values:
+      root: .
+      layout: page
+  - scope:
+      path: ""
+      type: episodes
+    values:
+      root: ..
+      layout: episode
+  - scope:
+      path: ""
+      type: extras
+    values:
+      root: ..
+      layout: page
+
+# Build settings
+theme: jekyll-theme-slate

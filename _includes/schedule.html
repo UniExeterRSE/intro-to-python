@@ -1,0 +1,17 @@
+{% include sortedpages.html %}
+
+<table style="width:80%">
+  <tr>
+    <th>Session</th>
+    <th>Content</th>
+    <th>Duration (minutes)</th>
+  </tr>
+  
+  {% for node in sorted_pages %}
+    <tr>
+    <td>{{ node.session }}</td>
+    <td>{{ node.title }}</td>
+    <td>{{ node.length }}</td>
+  </tr>
+{% endfor %}
+</table> 

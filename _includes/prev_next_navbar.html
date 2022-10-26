@@ -1,0 +1,16 @@
+{% include sortedpages.html %}
+<div class="topnav">
+  <a class="active" href="https://uniexeterrse.github.io/UoE-workshop-template/">Home</a>
+  {% for node in sorted_pages %}
+  {% if page.url == node.url %}
+    {% unless forloop.first %} 
+	<a class="prev" href="{{ site.baseurl }}{{prevpage.url}}">&laquo; Previous episode</a>
+    {% endunless %}
+    {% unless forloop.last %} 
+      {% assign nextpage = sorted_pages[forloop.index] %}
+	<a class="next" href="{{ site.baseurl }}{{nextpage.url}}">&laquo; Next episode</a>
+    {% endunless %}
+  {% endif %}
+  {% assign prevpage = node %}
+{% endfor %}
+</div> 
