@@ -10,4 +10,3 @@ The material for this workshop is structured in the following lessons which may 
 <ol>
 {% include toc.html %}
 </ol>
-
