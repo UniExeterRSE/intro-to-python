@@ -8,9 +8,13 @@ toc: true
 ---
 
 ## Learning Objectives
-At the end of this lesson you will be able to
 
-- define what a variable is
+At the end of this lesson you will be able to:
 
-## Introduction to variables
+- Identify and explain the basic data types used in Python
+- Create and use new variables in Python
+- Assign values to variables, and change these values later
+- Identify and use some built in features and functions of Python
+- Perform some simple operations on variables
 
+## I

@@ -8,9 +8,13 @@ toc: true
 ---
 
 ## Learning Objectives
-At the end of this lesson you will be able to
 
-- define what a variable is
+At the end of this lesson you will be able to:
+
+- Identify and explain what a dictionary is
+- Explain what makes a dictionary different to a list
+- Understand the `key`: `value` relationship
+- Create a dictionary containing simple values
+- Update values in a dictionary
 
 ## Introduction to variables
-
