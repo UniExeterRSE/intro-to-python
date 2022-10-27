@@ -5,7 +5,7 @@ developers: [Simon Kirby, Omar Jamil]
 description: Learn the basics of one of the most popular programming languages around!
 n_sessions: 2
 prereq: No prerequesite knowledge required. Course attendees will have followed the installation process for Python and JupyterLab.
-url: https://uniexeterrse.github.io/repo-name
+url: https://uniexeterrse.github.io/intro-to-python
 
 # Specify that things in the episodes collection should be output.
 collections:
