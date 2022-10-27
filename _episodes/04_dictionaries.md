@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Introduction to ...
-order: 2
+title: Dictionaries
+order: 5
 session: 1
-length: 20
+length: 15
 toc: true
 ---
 
