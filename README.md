@@ -2,7 +2,7 @@
 
 # Coding for Reproducible Research Workshop Template
 
-This repository is the template for creating websites for workshops that are part of the Coding for Reproducible Research initiative at the University of Exeter. 
+This repository is the template for creating websites for workshops that are part of the Coding for Reproducible Research initiative at the University of Exeter.
 
 ## How to create a workshop page
 
