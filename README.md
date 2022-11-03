@@ -1,30 +1,23 @@
-<a rel="license" href=""><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+# Intro to Python
 
-# Coding for Reproducible Research Workshop Template
+Please find the deployed site [here](https://uniexeterrse.github.io/intro-to-python/).
 
-This repository is the template for creating websites for workshops that are part of the Coding for Reproducible Research initiative at the University of Exeter.
+## Source details
 
-## How to create a workshop page
+This repository is based off of the University of Exeter `UoE-workshop-template` repository. This template uses Jekyll and GitHub pages to create a workshop guide.
 
-To create a new website for a new workshop, please use GitHub's "template" function to copy this `UoE-workshop-template` repository.
-**Please _do not fork this repository directly on GitHub._**
+## Ruby & local testing
 
-## Structure and required components
+Jekyll is a ruby Gem. A simple Gemfile has been added. To test the site locally, clone the repository, and run the following (on macOS). Ensure `ruby` and `bundle` have been installed, and then run the following from the project root:
 
-Each workshop has a landing or home page which provides the details of the workshop to individuals who might be interested in attending it. This home page will also direct participants who have signed up to set-up instructions and the course notes. It will also enable individuals who can't attend the workshop to all the resources and enable them to run through the material in their own time.
+`bundle config set --local path 'vendor/bundle'`
 
-Workshops are organised into 2-3 hour sessions of learning activity, where a workshop consists of 1-4 sessions. Beginners courses should have a minimum of 2 sessions. Each session will be split into episodes, where episodes should last between 20-90 mins. Workshops and sessions will follow a pre-specified format. We recommend that there is an opportunity for a break approximately every 60-90 mins.
+`bundle install`
 
-## Acknowledgements
+`bundle exec jekyll serve`
 
-This template was developed with help from this [tutorial](https://github.com/evanwill/go-go-ghpages). It was inspired and influenced by [The Carpentries' template](https://github.com/carpentries/workshop-template) for creating websites for workshops.
+Then open the site at the default server address of `http://127.0.0.1:4000`.
 
-## NEWS
+## JavaScript and bootstrap
 
-### 25/08/2022
-
-* Update to _config.yml file and includes/navbar.html to make links more robust.
-
-### 27/10/2022
-
-* Spell checking reviewed, and markdown formatting improved.
+Most of the styling for the site is found in `_sass/jekyll-theme-slate.scss`. JavaScript, Jquery, and and `bootstrap.css` have been added for the sole purpose of create unfolding and unfolding solution blocks, with bootstrap icons next to them. This has been lifted from the Carpentries Python lesson repository, and probably contains far more fluff than it needs.
