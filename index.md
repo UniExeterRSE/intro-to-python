@@ -34,19 +34,19 @@ This a hybrid workshop run over 2 sessions.
 
 |Session name | Dates | Time  | Venue | Sign up link |
 |--- |--- |--- |--- | --- |
-| Drop-in setup session: |XXX November 2022 | XXX | Online? |   |
-| Session 1 | 16th November 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]() |
-| Session 2 | 23rd November 2022 | 10 am - 1 pm | Streatham: Old Library Training Room 4  | [Registration form]() |
+| Drop-in setup help |14th November 2022 | 10:00-12:00 | Online on Teams |  Sent via email  |
+| Session 1 | 16th November 2022 | 10:00-13:00 | Streatham: Old Library Training Room 4  | Now closed! |
+| Session 2 | 23rd November 2022 | 10:00-13:00 | Streatham: Old Library Training Room 4  | Now closed! |
 
 Registration for this course is handled by the folks at [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/).
 
 ## Set-up instructions for attendees
 
-If you have registered for this course, you can find the [instructions for setting up your computer here.](https://uniexeterrse.github.io/workshop-template-test/setup.html).
+If you have registered for this course, you can find the [instructions for setting up your computer here](https://uniexeterrse.github.io/intro-to-python/setup.html).
 
 ## Start course
 
-If you are unable to attend any of the dates above the [notes for this course are available here](https://uniexeterrse.github.io/workshop-template-test/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set up instructions above.
+If you are unable to attend any of the dates above the [notes for this course are available here](https://uniexeterrse.github.io/intro-to-python/contents.html) and are freely available to work through in your own time. Please note that you will need to have completed the set up instructions above.
 
 ## Follow up courses
 
@@ -62,8 +62,13 @@ If you are interested in becoming part of our community of workshop helpers, lea
 
 ## Acknowledgements
 
-This course was adapted from the Software Carpentries [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/). It has been developed by the University of Exeter Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/UoE-workshop-template/acknowledgements.html) who are enthusiastic about sharing their skills with the wider research community.
+This course was adapted from the Software Carpentries [Programming with Python](https://swcarpentry.github.io/python-novice-inflammation/). It has been developed by the University of Exeter Research Software Engineering Group and [a team of generous volunteers](https://uniexeterrse.github.io/intro-to-python/acknowledgements.html) who are enthusiastic about sharing their skills with the wider research community.
 
 Its provision is dependent on the time of these volunteers. If you have benefited in any way from this course and want to support its long term sustainability then please take the time to complete our feedback survey, recommend it to your colleagues, and enthuse about it to your senior leadership team!
 
-This workshop is brought to you by the University of Exeter Research Software Engineering Group, [University of Exeter Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/), [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/) and the [University of Exeter Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/).
+This workshop is brought to you by:
+
+- The University of Exeter [Research Software Engineering Group](https://www.exeter.ac.uk/research/idsai/team/researchsoftwareengineers/)
+- The [Institute of Data Science and Artificial Intelligence](https://www.exeter.ac.uk/research/idsai/)
+- The University of Exeter [Researcher Development Programme](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/)
+- The University of Exeter [Doctoral College](https://www.exeter.ac.uk/research/doctoralcollege/)
