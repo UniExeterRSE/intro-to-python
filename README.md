@@ -1,3 +1,5 @@
+<a rel="license" href=""><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+
 # Intro to Python
 
 Please find the deployed site [here](https://uniexeterrse.github.io/intro-to-python/).
