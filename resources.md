@@ -15,6 +15,7 @@ you have to start trying things out, and creating projects. For example, you cou
 - [Real Python Tutorials](https://realpython.com/)
 - [PythonProgramming.net](https://pythonprogramming.net/)
 - [freecodecamp.org](https://www.freecodecamp.org/)
+- [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
 ## Research Software Engineering
 
