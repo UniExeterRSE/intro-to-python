@@ -17,7 +17,7 @@ At the end of this lesson you will be able to:
 - Append values to an existing list
 - Create and manipulate nested lists
 
-## Keypoints
+## Key points
 
 - "`[value1, value2, value3, ...]` creates a list."
 - "Lists can contain any Python object, including lists (i.e., list of lists)."
@@ -26,25 +26,10 @@ list[2:9]), in the same way as strings and arrays."
 - "Lists are mutable (i.e., their values can be changed in place)."
 - "Strings are immutable (i.e., the characters in them cannot be changed)."
 
-## Introduction
-
-In the previous episode, we analyzed a single file of clinical trial inflammation data. However,
-after finding some peculiar and potentially suspicious trends in the trial data we ask
-Dr. Maverick if they have performed any other clinical trials. Surprisingly, they say that they
-have and provide us with 11 more CSV files for a further 11 clinical trials they have undertaken
-since the initial trial.
-
-Our goal now is to process all the inflammation data we have, which means that we still have
-eleven more files to go!
-
-The natural first step is to collect the names of all the files that we have to process. In Python,
-a list is a way to store multiple values together. In this episode, we will learn how to store
-multiple values in a list as well as how to work with lists.
-
 ## Python lists
 
-Unlike NumPy arrays, lists are built into the language so we do not have to load a library
-to use them.
+Lists are a data structure in Python that can contain a changeable (or mutable) sequence of elements. These elements can be values or other variables.
+
 We create a list by putting values inside square brackets and separating the values with commas:
 
 ~~~
@@ -119,11 +104,11 @@ TypeError: 'str' object does not support item assignment
 
 does not.
 
-> ## Ch-Ch-Ch-Ch-Changes
->
-> Data which can be modified in place is called [mutable]({{ page.root }}/reference.html#mutable),
+## Ch-Ch-Ch-Ch-Changes
+
+> Data which can be modified in place is called mutable,
 > while data which cannot be modified is called
-> [immutable]({{ page.root }}/reference.html#immutable).
+> immutable.
 > Strings and numbers are immutable. This does not mean that variables with string or number values
 > are constants, but when we want to change the value of a string or number variable, we can only
 > replace the old value with a completely new value.

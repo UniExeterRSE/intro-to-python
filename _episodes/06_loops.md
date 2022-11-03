@@ -16,15 +16,13 @@ At the end of this lesson you will be able to:
 - Write some simple loops to perform repeat calculations
 - Investigate what is happening to variables as a `for` loop progresses
 
-## Introduction to variables
+## Key points
 
-
-## Keypoints
 - "Use `for variable in sequence` to process the elements of a sequence one at a time."
 - "The body of a `for` loop must be indented."
 - "Use `len(thing)` to determine the length of something that contains other values."
 
-
+## Introduction to loops
 
 ~~~
 odds = [1, 3, 5, 7]
@@ -96,7 +94,7 @@ IndexError: list index out of range
 ~~~
 {: .error}
 
-Here's a better approach: a [for loop]({{ page.root }}/reference.html#for-loop)
+Here's a better approach: a `for` loop
 
 ~~~
 odds = [1, 3, 5, 7]
@@ -133,7 +131,7 @@ for num in odds:
 ~~~
 {: .output}
 
-The improved version uses a [for loop]({{ page.root }}/reference.html#for-loop)
+The improved version uses a `for` loop
 to repeat an operation --- in this case, printing --- once for each thing in a sequence.
 The general form of a loop is:
 
@@ -152,15 +150,14 @@ where each number (`num`) in the variable `odds` is looped through and printed o
 another. The other numbers in the diagram denote which loop cycle the number was printed in (1
 being the first loop cycle, and 6 being the final loop cycle).
 
-We can call the [loop variable]({{ page.root }}/reference.html#loop-variable) anything we like, but
+We can call the loop variable anything we like, but
 there must be a colon at the end of the line starting the loop, and we must indent anything we
 want to run inside the loop. Unlike many other languages, there is no command to signify the end
 of the loop body (e.g. `end for`); what is indented after the `for` statement belongs to the loop.
 
 
-> ## What's in a name?
->
->
+## What's in a name?
+
 > In the example above, the loop variable was given the name `num` as a mnemonic;
 > it is short for 'number'.
 > We can choose any name we want for variables.  We might just as easily have chosen the name
@@ -260,8 +257,8 @@ and much easier to read than a two-line loop;
 it will also give us the length of many other things that we haven't met yet,
 so we should always use it when we can.
 
-> ## From 1 to N
->
+## From 1 to N
+
 > Python has a built-in function called `range` that generates a sequence of numbers. `range` can
 > accept 1, 2, or 3 parameters.
 >
@@ -294,11 +291,8 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
+ ## Understanding the loops
 
-
-
-> ## Understanding the loops
->
 > Given the following loop:
 > ~~~
 > word = 'oxygen'
@@ -321,10 +315,8 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
+## Computing Powers With Loops
 
-
-> ## Computing Powers With Loops
->
 > Exponentiation is built into Python:
 >
 > ~~~
@@ -351,8 +343,8 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
-> ## Summing a list
->
+## Summing a list
+
 > Write a loop that calculates the sum of elements in a list
 > by adding each element and printing the final value,
 > so `[124, 402, 36]` prints 562
@@ -369,9 +361,9 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
-> ## Computing the Value of a Polynomial
->
-> The built-in function `enumerate` takes a sequence (e.g. a [list]({{ page.root }}/04-lists/)) and
+## Computing the Value of a Polynomial
+
+> The built-in function `enumerate` takes a sequence (e.g. a list and
 > generates a new sequence of the same length. Each element of the new sequence is a pair composed
 > of the index (0, 1, 2,...) and the value from the original sequence:
 >
@@ -409,6 +401,29 @@ so we should always use it when we can.
 > > y = 0
 > > for idx, coef in enumerate(coefs):
 > >     y = y + coef * x**idx
+> > ~~~
+> > {: .language-python}
+> {: .solution}
+{: .challenge}
+
+## Counting Vowels
+
+> 1. Write a loop that counts the number of vowels in a character string.
+> 2. Test it on a few individual words and full sentences.
+> 3. Once you are done, compare your solution to your neighbor's.
+>    Did you make the same decisions about how to handle the letter 'y'
+>    (which some people think is a vowel, and some do not)?
+>
+> > ## Solution
+> > ~~~
+> > vowels = 'aeiouAEIOU'
+> > sentence = 'Mary had a little lamb.'
+> > count = 0
+> > for char in sentence:
+> >     if char in vowels:
+> >         count += 1
+> >
+> > print('The number of vowels in this string is ' + str(count))
 > > ~~~
 > > {: .language-python}
 > {: .solution}

@@ -16,11 +16,7 @@ At the end of this lesson you will be able to:
 - Explain the basic conditional statements, such as `if`, `else`, `and`, `not`, and `or`
 - Write some simple expressions using these statements
 
-## Representing a problem computationally
-
-
-
-## Keypoints
+## Key points
 - "Use `if condition` to start a conditional statement, `elif condition` to
    provide additional tests, and `else` to provide a default."
 - "The bodies of the branches of conditional statements must be indented."
@@ -104,8 +100,8 @@ else:
 Note that to test for equality we use a double equals sign `==`
 rather than a single equals sign `=` which is used to assign values.
 
-> ## Comparing in Python
->
+## Comparing in Python
+
 > Along with the `>` and `==` operators we have already used for comparing values in our
 > conditionals, there are a few more options to know about:
 >
@@ -249,8 +245,8 @@ but we could also imagine not using the `else` catch-all
 so that messages are only printed when something is wrong,
 freeing us from having to manually examine every plot for features we've seen before.
 
-> ## How Many Paths?
->
+## How Many Paths?
+
 > Consider this code:
 >
 > ~~~
@@ -277,8 +273,8 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .solution}
 {: .challenge}
 
-> ## What Is Truth?
->
+## What Is Truth?
+
 > `True` and `False` booleans are not the only values in Python that are true and false.
 > In fact, *any* value can be used in an `if` or `elif`.
 > After reading and running the code below,
@@ -301,8 +297,8 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .language-python}
 {: .challenge}
 
-> ## That's Not Not What I Meant
->
+## That's Not Not What I Meant
+
 > Sometimes it is useful to check whether some condition is not true.
 > The Boolean operator `not` can do this explicitly.
 > After reading and running the code below,
@@ -320,8 +316,8 @@ freeing us from having to manually examine every plot for features we've seen be
 > {: .language-python}
 {: .challenge}
 
-> ## Close Enough
->
+## Close Enough
+
 > Write some conditions that print `True` if the variable `a` is within 10% of the variable `b`
 > and `False` otherwise.
 > Compare your implementation with your partner's:
@@ -361,150 +357,5 @@ freeing us from having to manually examine every plot for features we've seen be
 > >
 > > This works because the Booleans `True` and `False`
 > > have string representations which can be printed.
-> {: .solution}
-{: .challenge}
-
-> ## In-Place Operators
->
-> Python (and most other languages in the C family) provides
-> [in-place operators]({{ page.root }}/reference.html#in-place-operators)
-> that work like this:
->
-> ~~~
-> x = 1  # original value
-> x += 1 # add one to x, assigning result back to x
-> x *= 3 # multiply x by 3
-> print(x)
-> ~~~
-> {: .language-python}
->
-> ~~~
-> 6
-> ~~~
-> {: .output}
->
-> Write some code that sums the positive and negative numbers in a list separately,
-> using in-place operators.
-> Do you think the result is more or less readable
-> than writing the same without in-place operators?
->
-> > ## Solution
-> > ~~~
-> > positive_sum = 0
-> > negative_sum = 0
-> > test_list = [3, 4, 6, 1, -1, -5, 0, 7, -8]
-> > for num in test_list:
-> >     if num > 0:
-> >         positive_sum += num
-> >     elif num == 0:
-> >         pass
-> >     else:
-> >         negative_sum += num
-> > print(positive_sum, negative_sum)
-> > ~~~
-> > {: .language-python}
-> >
-> > Here `pass` means "don't do anything".
-> In this particular case, it's not actually needed, since if `num == 0` neither
-> > sum needs to change, but it illustrates the use of `elif` and `pass`.
-> {: .solution}
-{: .challenge}
-
-> ## Sorting a List Into Buckets
->
-> In our `data` folder, large data sets are stored in files whose names start with
-> "inflammation-" and small data sets -- in files whose names start with "small-". We
-> also have some other files that we do not care about at this point. We'd like to break all
-> these files into three lists called `large_files`, `small_files`, and `other_files`,
-> respectively.
->
-> Add code to the template below to do this. Note that the string method
-> [`startswith`](https://docs.python.org/3/library/stdtypes.html#str.startswith)
-> returns `True` if and only if the string it is called on starts with the string
-> passed as an argument, that is:
->
-> ~~~
-> 'String'.startswith('Str')
-> ~~~
-> {: .language-python}
-> ~~~
-> True
-> ~~~
-> {: .output}
-> But
-> ~~~
-> 'String'.startswith('str')
-> ~~~
-> {: .language-python}
-> ~~~
-> False
-> ~~~
-> {: .output}
->Use the following Python code as your starting point:
-> ~~~
-> filenames = ['inflammation-01.csv',
->          'myscript.py',
->          'inflammation-02.csv',
->          'small-01.csv',
->          'small-02.csv']
-> large_files = []
-> small_files = []
-> other_files = []
-> ~~~
-> {: .language-python}
->
-> Your solution should:
->
-> 1.  loop over the names of the files
-> 2.  figure out which group each filename belongs in
-> 3.  append the filename to that list
->
-> In the end the three lists should be:
->
-> ~~~
-> large_files = ['inflammation-01.csv', 'inflammation-02.csv']
-> small_files = ['small-01.csv', 'small-02.csv']
-> other_files = ['myscript.py']
-> ~~~
-> {: .language-python}
->
-> > ## Solution
-> > ~~~
-> > for filename in filenames:
-> >     if filename.startswith('inflammation-'):
-> >         large_files.append(filename)
-> >     elif filename.startswith('small-'):
-> >         small_files.append(filename)
-> >     else:
-> >         other_files.append(filename)
-> >
-> > print('large_files:', large_files)
-> > print('small_files:', small_files)
-> > print('other_files:', other_files)
-> > ~~~
-> > {: .language-python}
-> {: .solution}
-{: .challenge}
-
-> ## Counting Vowels
->
-> 1. Write a loop that counts the number of vowels in a character string.
-> 2. Test it on a few individual words and full sentences.
-> 3. Once you are done, compare your solution to your neighbor's.
->    Did you make the same decisions about how to handle the letter 'y'
->    (which some people think is a vowel, and some do not)?
->
-> > ## Solution
-> > ~~~
-> > vowels = 'aeiouAEIOU'
-> > sentence = 'Mary had a little lamb.'
-> > count = 0
-> > for char in sentence:
-> >     if char in vowels:
-> >         count += 1
-> >
-> > print('The number of vowels in this string is ' + str(count))
-> > ~~~
-> > {: .language-python}
 > {: .solution}
 {: .challenge}

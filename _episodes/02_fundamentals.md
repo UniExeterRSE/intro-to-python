@@ -39,8 +39,7 @@ Any Python interpreter can be used as a calculator:
 
 This is great but not very interesting.
 To do anything useful with data, we need to assign its value to a _variable_.
-In Python, we can [assign]({{ page.root }}/reference.html#assign) a value to a
-[variable]({{ page.root }}/reference.html#variable), using the equals sign `=`.
+In Python, we can assign a value to a variable, using the equals sign `=`.
 For example, we can track the weight of a patient who weighs 60 kilograms by
 assigning the value `60` to a variable `weight_kg`:
 
@@ -56,7 +55,7 @@ In Python, variable names:
 
  - can include letters, digits, and underscores
  - cannot start with a digit
- - are [case sensitive]({{ page.root }}/reference.html#case-sensitive).
+ - are case-sensitive.
 
 This means that, for example:
  - `weight0` is a valid variable name, whereas `0weight` is not
@@ -107,7 +106,7 @@ patient_id = 'inflam_' + patient_id
 ## Built-in Python functions
 
 To carry out common tasks with data and variables in Python,
-the language provides us with several built-in [functions]({{ page.root }}/reference.html#function).
+the language provides us with several built-in functions.
 To display information to the screen, we use the `print` function:
 
 ~~~
@@ -142,8 +141,7 @@ inflam_001 weight in kilograms: 60.3
 {: .output}
 
 We can also call a function inside of another
-[function call]({{ page.root }}/reference.html#function-call).
-For example, Python has a built-in function called `type` that tells you a value's data type:
+function call. For example, Python has a built-in function called `type` that tells you a value's data type:
 
 ~~~
 print(type(60.3))
@@ -194,8 +192,8 @@ weight in kilograms is now: 65.0
 ~~~
 {: .output}
 
-> ## Variables as Sticky Notes
->
+## Variables as Sticky Notes
+
 > A variable in Python is analogous to a sticky note with a name written on it:
 > assigning a value to a variable is like putting that sticky note on a particular value.
 >
@@ -246,8 +244,8 @@ stuck on it](../fig/python-sticky-note-variables-03.svg)
 {: .callout}
 
 
-> ## Check Your Understanding
->
+## Check Your Understanding
+
 > What values do the variables `mass` and `age` have after each of the following statements?
 > Test your answer by executing the lines.
 >
@@ -270,8 +268,8 @@ stuck on it](../fig/python-sticky-note-variables-03.svg)
 > {: .solution}
 {: .challenge}
 
-> ## Sorting Out References
->
+## Sorting Out References
+
 > Python allows you to assign multiple values to multiple variables in one line by separating
 > the variables and values with commas. What does the following program print out?
 >
@@ -290,8 +288,8 @@ stuck on it](../fig/python-sticky-note-variables-03.svg)
 > {: .solution}
 {: .challenge}
 
-> ## Seeing Data Types
->
+## Seeing Data Types
+
 > What are the data types of the following variables?
 >
 > ~~~

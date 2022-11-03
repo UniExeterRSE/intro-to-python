@@ -51,6 +51,52 @@ toc: true
 > {: .solution}
 {: .challenge}
 
+## In-Place Operators
+
+> Python (and most other languages in the C family) provides
+> in-place operators
+> that work like this:
+>
+> ~~~
+> x = 1  # original value
+> x += 1 # add one to x, assigning result back to x
+> x *= 3 # multiply x by 3
+> print(x)
+> ~~~
+> {: .language-python}
+>
+> ~~~
+> 6
+> ~~~
+> {: .output}
+>
+> Write some code that sums the positive and negative numbers in a list separately,
+> using in-place operators.
+> Do you think the result is more or less readable
+> than writing the same without in-place operators?
+>
+> > ## Solution
+> > ~~~
+> > positive_sum = 0
+> > negative_sum = 0
+> > test_list = [3, 4, 6, 1, -1, -5, 0, 7, -8]
+> > for num in test_list:
+> >     if num > 0:
+> >         positive_sum += num
+> >     elif num == 0:
+> >         pass
+> >     else:
+> >         negative_sum += num
+> > print(positive_sum, negative_sum)
+> > ~~~
+> > {: .language-python}
+> >
+> > Here `pass` means "don't do anything".
+> In this particular case, it's not actually needed, since if `num == 0` neither
+> > sum needs to change, but it illustrates the use of `elif` and `pass`.
+> {: .solution}
+{: .challenge}
+
 ## Turn a String into a List
 
 > Use a for-loop to convert the string "hello" into a list of letters:
@@ -92,29 +138,6 @@ toc: true
 > > for char in oldstring:
 > >     newstring = char + newstring
 > > print(newstring)
-> > ~~~
-> > {: .language-python}
-> {: .solution}
-{: .challenge}
-
-## Fixing and Testing
-
-> Fix `range_overlap`. Re-run `test_range_overlap` after each change you make.
->
-> > ## Solution
-> > ~~~
-> > def range_overlap(ranges):
-> >     '''Return common overlap among a set of [left, right] ranges.'''
-> >     if not ranges:
-> >         # ranges is None or an empty list
-> >         return None
-> >     max_left, min_right = ranges[0]
-> >     for (left, right) in ranges[1:]:
-> >         max_left = max(max_left, left)
-> >         min_right = min(min_right, right)
-> >     if max_left >= min_right:  # no overlap
-> >         return None
-> >     return (max_left, min_right)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
