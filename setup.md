@@ -15,4 +15,4 @@ Further installation instructions can be found on the Anaconda web-pages [here](
 
 ## Help!
 
-Please have a go at installing Anaconda yourself. If you are struggling, we will be holding an online drop-in on the Monday before session starts. An email link will be made available to you once your registration on the course has been confirmed.
+Please have a go at installing Anaconda yourself. If you are struggling, we will be holding an online drop-in on the Monday before the first session. An email link will be made available to you once your registration on the course has been confirmed.

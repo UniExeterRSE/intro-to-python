@@ -7,8 +7,6 @@ n_sessions: 2
 prereq: No prerequesite knowledge required. Course attendees will have followed the installation process for Python and JupyterLab.
 url: https://uniexeterrse.github.io/intro-to-python
 
-markdown: kramdown
-
 # Specify that things in the episodes collection should be output.
 collections:
   episodes:

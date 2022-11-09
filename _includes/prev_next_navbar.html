@@ -1,6 +1,6 @@
 {% include sortedpages.html %}
 <div class="topnav">
-  <a class="active" href="https://uniexeterrse.github.io/intro-to-python/">Home</a>
+  <a class="active" href="{{ site.baseurl }}/index.html">Home</a>
   {% for node in sorted_pages %}
   {% if page.url == node.url %}
     {% unless forloop.first %} 
