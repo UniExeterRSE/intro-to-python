@@ -291,7 +291,7 @@ so we should always use it when we can.
 > {: .solution}
 {: .challenge}
 
- ## Understanding the loops
+## Understanding the loops
 
 > Given the following loop:
 > ~~~

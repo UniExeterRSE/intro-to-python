@@ -46,8 +46,7 @@ toc: true
 > >
 > > In the first case we used a temporary variable `temp` to keep the value of `left` before we
 > > overwrite it with the value of `right`. In the second case, `right` and `left` are packed into a
-> > [tuple]({{ page.root }}/reference.html#tuple)
-> > and then unpacked into `left` and `right`.
+> > tuple and then unpacked into `left` and `right`.
 > {: .solution}
 {: .challenge}
 
