@@ -59,4 +59,4 @@ Some more details are found below:
 
 Q: What are the reasons I should not learn Python?
 
-A: As a beginner, there are none to worry about for a few years! However, compared to languages such as C++ or Rust, Python can be slower for certain types of code. In addition, if you plan on building web applications, or anything with a front (user-facing) end, you will have to learn Javascript at some point. Even so, Python is a fantastic choice for your first (general) programming language.
+A: As a beginner, there are none to worry about for a few years! However, compared to languages such as C++ or Rust, Python can be slower (in terms of calculation speed) for certain types of tasks. In addition, if you plan on building web applications, or anything with a front (user-facing) end, you will have to learn Javascript at some point. Even so, Python is a fantastic choice for your first (general) programming language.
