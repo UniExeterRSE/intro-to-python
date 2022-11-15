@@ -156,7 +156,7 @@ does not.
 > when writing your code.
 {: .callout}
 
-> ## Nested Lists
+## Nested Lists
 > Since a list can contain any Python variables, it can even contain other lists.
 >
 > For example, we could represent the products in the shelves of a small grocery shop:
@@ -212,7 +212,7 @@ does not.
 > for the image above.
 {: .callout}
 
-> ## Heterogeneous Lists
+## Heterogeneous Lists
 > Lists in Python can contain elements of different types. Example:
 > ~~~
 > sample_ages = [10, 12.5, 'Unknown']
@@ -328,8 +328,8 @@ last: 4
 ~~~
 {: .output}
 
-> ## Slicing From the End
->
+## Slicing From the End
+
 > Use slicing to access only the last four characters of a string or entries of a list.
 >
 > ~~~
@@ -366,8 +366,8 @@ last: 4
 > {: .solution}
 {: .challenge}
 
-> ## Non-Continuous Slices
->
+## Non-Continuous Slices
+
 > So far we've seen how to use slicing to take single blocks
 > of successive entries from a sequence.
 > But what if we want to take a subset of entries
@@ -484,8 +484,8 @@ Omitting ending index: ['sep', 'oct', 'nov', 'dec']
 ~~~
 {: .output}
 
-> ## Overloading
->
+## Overloading
+
 > `+` usually means addition, but when used on strings or lists, it means "concatenate".
 > Given that, what do you think the multiplication operator `*` does on lists?
 > In particular, what will be the output of the following code?

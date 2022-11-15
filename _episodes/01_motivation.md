@@ -11,11 +11,13 @@ toc: true
 
 In this lesson, we will discuss:
 
-- Why you should learn to code
 - Who you are, and why you signed up for this course
+- Why you should learn to code
 - Why Python is great!
-- What Python is used for, in research and beyond
-- Some examples of Python projects
+
+## Who are you?
+
+As we begin, and ensure that everyone has a working Python installation, feel free to write in the Teams chat which Department you are from, and any reasons you signed up for this course!  
 
 ## Why learn to code?
 
@@ -46,10 +48,12 @@ But most importantly:
 
 Q: MATLAB and R are commonly used in academic settings. Why should I use Python over these?
 
-A: There is no right answer, and everyone has their own opinion! However, Python is more popular outside of academia, has a larger worldwide community, and is the de-facto language for machine learning and AI applications.
+A: There is no right answer, and everyone has their own opinion! At the end of the day, most modern languages are Turing complete, and can solve a variety of problems. However, Python is more popular than both of these languages outside of academia, it has a larger worldwide community, and is the de-facto language for machine learning and AI applications.
+
+Some more details are found below:
 
 - MATLAB is not open-source, and toolboxes are incredibly expensive. If you plan on ever leaving academia and programming for yourself, or for your own company, you should not learn MATLAB (as you will have to pay huge amounts to avoid wasting your language-specific knowledge). In addition, outside of engineering, MATLAB is less commonly used. MATLAB does have some good features: matrix manipulation in MATLAB is well considered, and Simulink is effective as well. For everything else however, consider another language: Python is an obvious choice.
-- R is an open-source statistical computing language, with some excellent packages for statistics and visualisation. If you plan on linking analysis with cloud services, building websites or applications, or performing other development tasks, a general purpose language such as Python is perhaps a better choice. A good comparison of Python and R is made by IBM [here.](https://www.ibm.com/cloud/blog/python-vs-r).
+- R is an open-source statistical computing language, with some excellent features for statistics and visualisation, including some fantastic Bayesian and MCMC packages. However, if you plan on linking analysis with cloud services, building websites or applications, or performing other development tasks, a general purpose language such as Python is perhaps a better choice. A good comparison of Python and R is made by IBM [here](https://www.ibm.com/cloud/blog/python-vs-r).
 
 ## Why NOT Python?
 

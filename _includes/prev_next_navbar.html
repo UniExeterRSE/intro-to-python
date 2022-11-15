@@ -8,7 +8,7 @@
     {% endunless %}
     {% unless forloop.last %} 
       {% assign nextpage = sorted_pages[forloop.index] %}
-	<a class="next" href="{{ site.baseurl }}{{nextpage.url}}">&laquo; Next episode</a>
+	<a class="next" href="{{ site.baseurl }}{{nextpage.url}}">Next episode &raquo;</a>
     {% endunless %}
   {% endif %}
   {% assign prevpage = node %}
