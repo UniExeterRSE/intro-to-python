@@ -56,7 +56,9 @@ Once you are here you are ready for the first session.
 
 You can also launch JupyterLab from the command line. Open the Anaconda
 PowerShell (or other shell from python) and run
-> jupyter lab
+```
+jupyter lab
+```
 
 
 ### VisualStudio Code
@@ -70,10 +72,13 @@ You can download VSCode from
 how to setup python with VSCode at
 [python-tutorial](https://code.visualstudio.com/docs/python/python-tutorial).
 
-TO check that you have everything installed and ready open VSCode. Then open a
+To check that you have everything installed and ready open VSCode. Then open a
 terminal in VSCode (Terminal -> 'New Terminal'). Then ```python --version```, if you
 see something like 
-> Python 3...
+```
+Python 3...
+```
+
 Then everything is ready.
 
 ## Help!
@@ -90,7 +95,9 @@ confirmed.
     [StackOverflow](https://stackoverflow.com/questions/47772157/how-to-change-the-default-browser-used-by-jupyter-notebook-in-windows)
     the basic answer is to create a config file and specify the browser.
     A config file can be created with
-    > jupyter notebook --generate-config
+    ```
+    jupyter notebook --generate-config
+    ```
     Then the ```c.NotebookApp.browser``` and ```c.ServerApp.browser``` options can be set to the appropriate browser.
 
 - What is the difference between JupyterLab and a Jupyter Notebook?
