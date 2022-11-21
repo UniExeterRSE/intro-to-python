@@ -11,7 +11,7 @@ toc: true
 
 - Fundamentals
 - Data structures: lists and dictionaries
-- Control flow: if, elif & else
+- Control flow: `if`, `elif` & `else`
 - Loops
 - Exercise: check your understanding
 
