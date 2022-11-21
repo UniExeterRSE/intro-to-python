@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Additional exercises
+title: Additional Session 1 Exercises
 order: 8
 session: 1
 length: 20
