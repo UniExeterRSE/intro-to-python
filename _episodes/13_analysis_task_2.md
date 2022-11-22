@@ -103,7 +103,7 @@ Here are our three plots side by side:
 import numpy
 import matplotlib.pyplot as plt
 
-data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = np.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 
 fig = plt.figure(figsize=(10.0, 3.0))
 
@@ -224,7 +224,7 @@ formats, including SVG, PDF, and JPEG.
 > > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
+> > data = np.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 > >
 > > fig = plt.figure(figsize=(10.0, 3.0))
 > >
@@ -275,7 +275,7 @@ formats, including SVG, PDF, and JPEG.
 > > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
+> > data = np.loadtxt(fname='data/inflammation-01.csv', delimiter=',')
 > >
 > > # change figsize (swap width and height)
 > > fig = plt.figure(figsize=(3.0, 10.0))

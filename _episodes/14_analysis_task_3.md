@@ -37,7 +37,7 @@ while `?` matches any one character.
 We can use this to get the names of all the CSV files in the current directory:
 
 ~~~
-print(glob.glob('inflammation*.csv'))
+print(glob.glob('data/inflammation*.csv'))
 ~~~
 {: .language-python}
 
@@ -63,7 +63,7 @@ import glob
 import numpy as np
 import matplotlib.pyplot as plt
 
-filenames = sorted(glob.glob('inflammation*.csv'))
+filenames = sorted(glob.glob('data/inflammation*.csv'))
 filenames = filenames[0:3]
 for filename in filenames:
     print(filename)
@@ -150,7 +150,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > filenames = sorted(glob.glob('inflammation*.csv'))
+> > filenames = sorted(glob.glob('data/inflammation*.csv'))
 > >
 > > data0 = np.loadtxt(fname=filenames[0], delimiter=',')
 > > data1 = np.loadtxt(fname=filenames[1], delimiter=',')
@@ -172,7 +172,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > Use each of the files once to generate a dataset containing values averaged over all patients:
 >
 > ~~~
-> filenames = glob.glob('inflammation*.csv')
+> filenames = glob.glob('data/inflammation*.csv')
 > composite_data = np.zeros((60,40))
 > for filename in filenames:
 >     # sum each new file's data into composite_data as it's read
@@ -190,7 +190,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > filenames = glob.glob('inflammation*.csv')
+> > filenames = glob.glob('data/inflammation*.csv')
 > > composite_data = np.zeros((60,40))
 > >
 > > for filename in filenames:
