@@ -11,7 +11,7 @@ toc: true
 
 We hope you have enjoyed this course, and are inspired to start using Python for your research tasks. Please feel free to go through the course notes at your own pace, and complete the exercises that we have provided.
 
-This is the first time that we have run this course. We would be grateful for your feedback. If you wish to do so, please send this to Eilis Hannon, at <E.J.hannon@exeter.ac.uk>.
+This is the first time that we have run this course. We would be grateful for your feedback. If you wish to give it, please send this to Eilis Hannon, at <E.J.hannon@exeter.ac.uk>.
 
 ## What next?
 

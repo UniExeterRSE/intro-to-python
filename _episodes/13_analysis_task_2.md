@@ -27,9 +27,9 @@ import the `pyplot` module from `matplotlib` and use two of its functions to cre
 heat map of our data:
 
 ~~~
-import matplotlib.pyplot
-image = matplotlib.pyplot.imshow(data)
-matplotlib.pyplot.show()
+import matplotlib.pyplot as plt
+image = plt.imshow(data)
+plt.show()
 ~~~
 {: .language-python}
 
@@ -52,8 +52,8 @@ Now let's take a look at the average inflammation over time:
 
 ~~~
 ave_inflammation = numpy.mean(data, axis=0)
-ave_plot = matplotlib.pyplot.plot(ave_inflammation)
-matplotlib.pyplot.show()
+ave_plot = plt.plot(ave_inflammation)
+plt.show()
 ~~~
 {: .language-python}
 
@@ -66,16 +66,16 @@ the medication takes 3 weeks to take effect.  But a good data scientist doesn't 
 average of a dataset, so let's have a look at two other statistics:
 
 ~~~
-max_plot = matplotlib.pyplot.plot(numpy.max(data, axis=0))
-matplotlib.pyplot.show()
+max_plot = plt.plot(numpy.max(data, axis=0))
+plt.show()
 ~~~
 {: .language-python}
 
 ![A line graph showing the maximum inflammation across all patients over a 40-day period.](../fig/inflammation-01-maximum.svg)
 
 ~~~
-min_plot = matplotlib.pyplot.plot(numpy.min(data, axis=0))
-matplotlib.pyplot.show()
+min_plot = plt.plot(numpy.min(data, axis=0))
+plt.show()
 ~~~
 {: .language-python}
 
@@ -101,11 +101,11 @@ Here are our three plots side by side:
 
 ~~~
 import numpy
-import matplotlib.pyplot
+import matplotlib.pyplot as plt
 
 data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 
-fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+fig = plt.figure(figsize=(10.0, 3.0))
 
 axes1 = fig.add_subplot(1, 3, 1)
 axes2 = fig.add_subplot(1, 3, 2)
@@ -122,8 +122,8 @@ axes3.plot(numpy.min(data, axis=0))
 
 fig.tight_layout()
 
-matplotlib.pyplot.savefig('inflammation.png')
-matplotlib.pyplot.show()
+plt.savefig('inflammation.png')
+plt.show()
 ~~~
 {: .language-python}
 
@@ -145,7 +145,7 @@ Matplotlib from the file name ending we specify; here PNG from
 'inflammation.png'. Matplotlib supports many different graphics
 formats, including SVG, PDF, and JPEG.
 
-> ## Importing libraries with shortcuts
+## Importing libraries with shortcuts
 >
 > In this lesson we use the `import matplotlib.pyplot`
 > syntax
@@ -167,7 +167,7 @@ formats, including SVG, PDF, and JPEG.
 > is important you agree on how libraries are imported.
 {: .callout}
 
-> ## Plot Scaling
+## Plot Scaling
 >
 > Why do all of our plots stop just short of the upper end of our graph?
 >
@@ -209,7 +209,7 @@ formats, including SVG, PDF, and JPEG.
 > {: .solution}
 {: .challenge}
 
-> ## Drawing Straight Lines
+## Drawing Straight Lines
 >
 > In the center and right subplots above, we expect all lines to look like step functions because
 > non-integer value are not realistic for the minimum and maximum values. However, you can see
@@ -222,11 +222,11 @@ formats, including SVG, PDF, and JPEG.
 > >
 > > ~~~
 > > import numpy
-> > import matplotlib.pyplot
+> > import matplotlib.pyplot as plt
 > >
 > > data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 > >
-> > fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+> > fig = plt.figure(figsize=(10.0, 3.0))
 > >
 > > axes1 = fig.add_subplot(1, 3, 1)
 > > axes2 = fig.add_subplot(1, 3, 2)
@@ -243,7 +243,7 @@ formats, including SVG, PDF, and JPEG.
 > >
 > > fig.tight_layout()
 > >
-> > matplotlib.pyplot.show()
+> > plt.show()
 > > ~~~
 > > {: .language-python}
 > ![Three line graphs, with step lines connecting the points, showing the daily average, maximum
@@ -251,21 +251,21 @@ formats, including SVG, PDF, and JPEG.
 > {: .solution}
 {: .challenge}
 
-> ## Make Your Own Plot
+## Make Your Own Plot
 >
 > Create a plot showing the standard deviation (`numpy.std`)
 > of the inflammation data for each day across all patients.
 >
 > > ## Solution
 > > ~~~
-> > std_plot = matplotlib.pyplot.plot(numpy.std(data, axis=0))
-> > matplotlib.pyplot.show()
+> > std_plot = plt.plot(numpy.std(data, axis=0))
+> > plt.show()
 > > ~~~
 > > {: .language-python}
 > {: .solution}
 {: .challenge}
 
-> ## Moving Plots Around
+## Moving Plots Around
 >
 > Modify the program to display the three plots on top of one another
 > instead of side by side.
@@ -273,12 +273,12 @@ formats, including SVG, PDF, and JPEG.
 > > ## Solution
 > > ~~~
 > > import numpy
-> > import matplotlib.pyplot
+> > import matplotlib.pyplot as plt
 > >
 > > data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
 > >
 > > # change figsize (swap width and height)
-> > fig = matplotlib.pyplot.figure(figsize=(3.0, 10.0))
+> > fig = plt.figure(figsize=(3.0, 10.0))
 > >
 > > # change add_subplot (swap first two parameters)
 > > axes1 = fig.add_subplot(3, 1, 1)
@@ -296,7 +296,7 @@ formats, including SVG, PDF, and JPEG.
 > >
 > > fig.tight_layout()
 > >
-> > matplotlib.pyplot.show()
+> > plt.show()
 > > ~~~
 > > {: .language-python}
 > {: .solution}

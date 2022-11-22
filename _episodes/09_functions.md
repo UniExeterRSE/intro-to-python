@@ -49,6 +49,8 @@ We have already used some built-in functions: `print()`, `type()`, `range()` and
 
 Using these functions allows us to create much more concise, readable code. Imagine if we had to write all the code that goes on behind the scenes each time we wanted to use `print()`! We will do the same with our own functions.
 
+## Defining functions
+
 Let's start by defining a function `fahr_to_celsius` that converts temperatures
 from Fahrenheit to Celsius:
 

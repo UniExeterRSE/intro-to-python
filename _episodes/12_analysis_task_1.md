@@ -144,7 +144,7 @@ These data correspond to arthritis patients' inflammation.
 The rows are the individual patients, and the columns
 are their daily inflammation measurements.
 
-> ## Data Type
+## Data Type
 >
 > A Numpy array contains one or more elements
 > of the same type. The `type` function will only tell you that
@@ -237,7 +237,7 @@ data[0, 2] = 'C', data[1, 0] = 'D', data[1, 1] = 'E', data[1, 2] = 'F', data[2, 
 data[2, 1] = 'H', and data[2, 2] = 'I',
 in the bottom right hand corner.](../fig/python-zero-index.svg)
 
-> ## In the Corner
+## In the Corner
 >
 > What may also surprise you is that when Python displays an array,
 > it shows the element with index `[0, 0]` in the upper left corner
@@ -375,7 +375,7 @@ standard deviation: 4.61383319712
 ~~~
 {: .output}
 
-> ## Mystery Functions in IPython
+## Mystery Functions in IPython
 >
 > How did we know what functions NumPy has and how to use them?
 > If you are working in IPython or in a Jupyter Notebook, there is an easy way to find out.
@@ -493,7 +493,7 @@ print(numpy.mean(data, axis=1))
 which is the average inflammation per patient across all days.
 
 
-> ## Slicing Strings
+## Slicing Strings
 >
 > A section of an array is called a slice.
 > We can take slices of character strings as well:
@@ -587,7 +587,7 @@ which is the average inflammation per patient across all days.
 > {: .solution}
 {: .challenge}
 
-> ## Stacking Arrays
+## Stacking Arrays
 >
 > Arrays can be concatenated and stacked on top of one another,
 > using NumPy's `vstack` and `hstack` functions for vertical and horizontal stacking, respectively.
@@ -679,7 +679,7 @@ which is the average inflammation per patient across all days.
 > {: .solution}
 {: .challenge}
 
-> ## Change In Inflammation
+## Change In Inflammation
 >
 > The patient data is _longitudinal_ in the sense that each row represents a
 > series of observations relating to one individual.  This means that

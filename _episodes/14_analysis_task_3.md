@@ -61,7 +61,7 @@ If we want to start by analyzing just the first three files in alphabetical orde
 ~~~
 import glob
 import numpy
-import matplotlib.pyplot
+import matplotlib.pyplot as plt
 
 filenames = sorted(glob.glob('inflammation*.csv'))
 filenames = filenames[0:3]
@@ -70,7 +70,7 @@ for filename in filenames:
 
     data = numpy.loadtxt(fname=filename, delimiter=',')
 
-    fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+    fig = plt.figure(figsize=(10.0, 3.0))
 
     axes1 = fig.add_subplot(1, 3, 1)
     axes2 = fig.add_subplot(1, 3, 2)
@@ -86,7 +86,7 @@ for filename in filenames:
     axes3.plot(numpy.min(data, axis=0))
 
     fig.tight_layout()
-    matplotlib.pyplot.show()
+    plt.show()
 ~~~
 {: .language-python}
 
@@ -138,7 +138,7 @@ trial. In addition, we can see that the last patient in the study didn't have an
 flare-ups at all throughout the trial, suggesting that they may not even suffer from arthritis!
 
 
-> ## Plotting Differences
+## Plotting Differences
 >
 > Plot the difference between the average inflammations reported in the first and second datasets
 > (stored in `inflammation-01.csv` and `inflammation-02.csv`, correspondingly),
@@ -148,26 +148,26 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > ~~~
 > > import glob
 > > import numpy
-> > import matplotlib.pyplot
+> > import matplotlib.pyplot as plt
 > >
 > > filenames = sorted(glob.glob('inflammation*.csv'))
 > >
 > > data0 = numpy.loadtxt(fname=filenames[0], delimiter=',')
 > > data1 = numpy.loadtxt(fname=filenames[1], delimiter=',')
 > >
-> > fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+> > fig = plt.figure(figsize=(10.0, 3.0))
 > >
-> > matplotlib.pyplot.ylabel('Difference in average')
-> > matplotlib.pyplot.plot(numpy.mean(data0, axis=0) - numpy.mean(data1, axis=0))
+> > plt.ylabel('Difference in average')
+> > plt.plot(numpy.mean(data0, axis=0) - numpy.mean(data1, axis=0))
 > >
 > > fig.tight_layout()
-> > matplotlib.pyplot.show()
+> > plt.show()
 > > ~~~
 > > {: .language-python}
 > {: .solution}
 {: .challenge}
 
-> ## Generate Composite Statistics
+## Generate Composite Statistics
 >
 > Use each of the files once to generate a dataset containing values averaged over all patients:
 >
@@ -188,7 +188,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > ~~~
 > > import glob
 > > import numpy
-> > import matplotlib.pyplot
+> > import matplotlib.pyplot as plt
 > >
 > > filenames = glob.glob('inflammation*.csv')
 > > composite_data = numpy.zeros((60,40))
@@ -199,7 +199,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > >
 > > composite_data = composite_data / len(filenames)
 > >
-> > fig = matplotlib.pyplot.figure(figsize=(10.0, 3.0))
+> > fig = plt.figure(figsize=(10.0, 3.0))
 > >
 > > axes1 = fig.add_subplot(1, 3, 1)
 > > axes2 = fig.add_subplot(1, 3, 2)
@@ -216,7 +216,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > >
 > > fig.tight_layout()
 > >
-> > matplotlib.pyplot.show()
+> > plt.show()
 > > ~~~
 > > {: .language-python}
 >{: .solution}
