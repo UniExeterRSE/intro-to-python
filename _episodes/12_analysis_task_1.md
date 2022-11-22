@@ -37,7 +37,7 @@ especially if you have matrices or arrays. To tell Python that we'd like to star
 we need to import it:
 
 ~~~
-import numpy
+import numpy as np
 ~~~
 {: .language-python}
 
@@ -50,7 +50,7 @@ need for each program.
 Once we've imported the library, we can ask the library to read our data file for us:
 
 ~~~
-numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ~~~
 {: .language-python}
 
@@ -65,7 +65,7 @@ array([[ 0.,  0.,  1., ...,  3.,  0.,  0.],
 ~~~
 {: .output}
 
-The expression `numpy.loadtxt(...)` is a
+The expression `np.loadtxt(...)` is a
 function call
 that asks Python to run the function `loadtxt` which
 belongs to the `numpy` library.
@@ -76,7 +76,7 @@ As an example, John Smith is the John that belongs to the Smith family.
 We could use the dot notation to write his name `smith.john`,
 just as `loadtxt` is a function that belongs to the `numpy` library.
 
-`numpy.loadtxt` has two parameters: the name of the file
+`np.loadtxt` has two parameters: the name of the file
 we want to read and the delimiter that separates values
 on a line. These both need to be character strings
 (or strings for short), so we put them in quotes.
@@ -91,15 +91,15 @@ only a few rows and columns are shown
 Note that, to save space when displaying NumPy arrays, Python does not show us trailing zeros,
 so `1.0` becomes `1.`.
 
-Our call to `numpy.loadtxt` read our file
+Our call to `np.loadtxt` read our file
 but didn't save the data in memory.
 To do that,
 we need to assign the array to a variable. In a similar manner to how we assign a single
 value to a variable, we can also assign an array of values to a variable using the same syntax.
-Let's re-run `numpy.loadtxt` and save the returned data:
+Let's re-run `np.loadtxt` and save the returned data:
 
 ~~~
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 ~~~
 {: .language-python}
 
@@ -317,7 +317,7 @@ If we want to find the average inflammation for all patients on
 all days, for example, we can ask NumPy to compute `data`'s mean value:
 
 ~~~
-print(numpy.mean(data))
+print(np.mean(data))
 ~~~
 {: .language-python}
 
@@ -357,7 +357,7 @@ We'll also use multiple assignment,
 a convenient Python feature that will enable us to do this all in one line.
 
 ~~~
-maxval, minval, stdval = numpy.max(data), numpy.min(data), numpy.std(data)
+maxval, minval, stdval = np.max(data), np.min(data), np.std(data)
 
 print('maximum inflammation:', maxval)
 print('minimum inflammation:', minval)
@@ -365,8 +365,8 @@ print('standard deviation:', stdval)
 ~~~
 {: .language-python}
 
-Here we've assigned the return value from `numpy.max(data)` to the variable `maxval`, the value
-from `numpy.min(data)` to `minval`, and so on.
+Here we've assigned the return value from `np.max(data)` to the variable `maxval`, the value
+from `np.min(data)` to `minval`, and so on.
 
 ~~~
 maximum inflammation: 20.0
@@ -381,14 +381,14 @@ standard deviation: 4.61383319712
 > If you are working in IPython or in a Jupyter Notebook, there is an easy way to find out.
 > If you type the name of something followed by a dot, then you can use
 > tab completion
-> (e.g. type `numpy.` and then press <kbd>Tab</kbd>)
+> (e.g. type `np.` and then press <kbd>Tab</kbd>)
 > to see a list of all functions and attributes that you can use. After selecting one, you
-> can also add a question mark (e.g. `numpy.cumprod?`), and IPython will return an
-> explanation of the method! This is the same as doing `help(numpy.cumprod)`.
-> Similarly, if you are using the "plain vanilla" Python interpreter, you can type `numpy.`
+> can also add a question mark (e.g. `np.cumprod?`), and IPython will return an
+> explanation of the method! This is the same as doing `help(np.cumprod)`.
+> Similarly, if you are using the "plain vanilla" Python interpreter, you can type `np.`
 > and press the <kbd>Tab</kbd> key twice for a listing of what is available. You can then use the
 > `help()` function to see an explanation of the function you're interested in,
-> for example: `help(numpy.cumprod)`.
+> for example: `help(np.cumprod)`.
 {: .callout}
 
 When analyzing data, though,
@@ -400,7 +400,7 @@ then ask it to do the calculation:
 
 ~~~
 patient_0 = data[0, :] # 0 on the first axis (rows), everything on the second (columns)
-print('maximum inflammation for patient 0:', numpy.max(patient_0))
+print('maximum inflammation for patient 0:', np.max(patient_0))
 ~~~
 {: .language-python}
 
@@ -418,7 +418,7 @@ We don't actually need to store the row in a variable of its own.
 Instead, we can combine the selection and the function call:
 
 ~~~
-print('maximum inflammation for patient 2:', numpy.max(data[2, :]))
+print('maximum inflammation for patient 2:', np.max(data[2, :]))
 ~~~
 {: .language-python}
 
@@ -433,8 +433,8 @@ diagram on the right)? As the diagram below shows, we want to perform the
 operation across an axis:
 
 ![Per-patient maximum inflammation is computed row-wise across all columns using
-numpy.max(data, axis=1). Per-day average inflammation is computed column-wise across all rows using
-numpy.mean(data, axis=0).](../fig/python-operations-across-axes.png)
+np.max(data, axis=1). Per-day average inflammation is computed column-wise across all rows using
+np.mean(data, axis=0).](../fig/python-operations-across-axes.png)
 
 To support this functionality,
 most array functions allow us to specify the axis we want to work on.
@@ -442,7 +442,7 @@ If we ask for the average across axis 0 (rows in our 2D example),
 we get:
 
 ~~~
-print(numpy.mean(data, axis=0))
+print(np.mean(data, axis=0))
 ~~~
 {: .language-python}
 
@@ -462,7 +462,7 @@ As a quick check,
 we can ask this array what its shape is:
 
 ~~~
-print(numpy.mean(data, axis=0).shape)
+print(np.mean(data, axis=0).shape)
 ~~~
 {: .language-python}
 
@@ -476,7 +476,7 @@ so this is the average inflammation per day for all patients.
 If we average across axis 1 (columns in our 2D example), we get:
 
 ~~~
-print(numpy.mean(data, axis=1))
+print(np.mean(data, axis=1))
 ~~~
 {: .language-python}
 
@@ -593,17 +593,17 @@ which is the average inflammation per patient across all days.
 > using NumPy's `vstack` and `hstack` functions for vertical and horizontal stacking, respectively.
 >
 > ~~~
-> import numpy
+> import numpy as np
 >
-> A = numpy.array([[1,2,3], [4,5,6], [7, 8, 9]])
+> A = np.array([[1,2,3], [4,5,6], [7, 8, 9]])
 > print('A = ')
 > print(A)
 >
-> B = numpy.hstack([A, A])
+> B = np.hstack([A, A])
 > print('B = ')
 > print(B)
 >
-> C = numpy.vstack([A, A])
+> C = np.vstack([A, A])
 > print('C = ')
 > print(C)
 > ~~~
@@ -642,7 +642,7 @@ which is the average inflammation per patient across all days.
 > > vector).
 > >
 > > ~~~
-> > D = numpy.hstack((A[:, :1], A[:, -1:]))
+> > D = np.hstack((A[:, :1], A[:, -1:]))
 > > print('D = ')
 > > print(D)
 > > ~~~
@@ -663,7 +663,7 @@ which is the average inflammation per patient across all days.
 > > delete function to remove the second column of A.
 > >
 > > ~~~
-> > D = numpy.delete(A, 1, 1)
+> > D = np.delete(A, 1, 1)
 > > print('D = ')
 > > print(D)
 > > ~~~
@@ -687,7 +687,7 @@ which is the average inflammation per patient across all days.
 > Let's find out how to calculate changes in the data contained in an array
 > with NumPy.
 >
-> The `numpy.diff()` function takes an array and returns the differences
+> The `np.diff()` function takes an array and returns the differences
 > between two successive values. Let's use it to examine the changes
 > each day across the first week of patient 3 from our inflammation dataset.
 >
@@ -702,7 +702,7 @@ which is the average inflammation per patient across all days.
 > ~~~
 > {: .output}
 >
-> Calling `numpy.diff(patient3_week1)` would do the following calculations
+> Calling `np.diff(patient3_week1)` would do the following calculations
 >
 > ~~~
 > [ 0 - 0, 2 - 0, 0 - 2, 4 - 0, 2 - 4, 2 - 2 ]
@@ -712,7 +712,7 @@ which is the average inflammation per patient across all days.
 > and return the 6 difference values in a new array.
 >
 > ~~~
-> numpy.diff(patient3_week1)
+> np.diff(patient3_week1)
 > ~~~
 > {: .language-python}
 >
@@ -723,9 +723,9 @@ which is the average inflammation per patient across all days.
 >
 > Note that the array of differences is shorter by one element (length 6).
 >
-> When calling `numpy.diff` with a multi-dimensional array, an `axis` argument may
+> When calling `np.diff` with a multi-dimensional array, an `axis` argument may
 > be passed to the function to specify which axis to process. When applying
-> `numpy.diff` to our 2D inflammation array `data`, which axis would we specify?
+> `np.diff` to our 2D inflammation array `data`, which axis would we specify?
 >
 > > ## Solution
 > > Since the row axis (0) is patients, it does not make sense to get the
@@ -734,7 +734,7 @@ which is the average inflammation per patient across all days.
 > > concept.
 > >
 > > ~~~
-> > numpy.diff(data, axis=1)
+> > np.diff(data, axis=1)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -752,11 +752,11 @@ which is the average inflammation per patient across all days.
 > it matter if the change in inflammation is an increase or a decrease?
 >
 > > ## Solution
-> > By using the `numpy.max()` function after you apply the `numpy.diff()`
+> > By using the `np.max()` function after you apply the `np.diff()`
 > > function, you will get the largest difference between days.
 > >
 > > ~~~
-> > numpy.max(numpy.diff(data, axis=1), axis=1)
+> > np.max(np.diff(data, axis=1), axis=1)
 > > ~~~
 > > {: .language-python}
 > >
@@ -773,13 +773,13 @@ which is the average inflammation per patient across all days.
 > > If inflammation values *decrease* along an axis, then the difference from
 > > one element to the next will be negative. If
 > > you are interested in the **magnitude** of the change and not the
-> > direction, the `numpy.absolute()` function will provide that.
+> > direction, the `np.absolute()` function will provide that.
 > >
 > > Notice the difference if you get the largest _absolute_ difference
 > > between readings.
 > >
 > > ~~~
-> > numpy.max(numpy.absolute(numpy.diff(data, axis=1)), axis=1)
+> > np.max(np.absolute(np.diff(data, axis=1)), axis=1)
 > > ~~~
 > > {: .language-python}
 > >

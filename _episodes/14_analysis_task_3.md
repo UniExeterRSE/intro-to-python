@@ -60,7 +60,7 @@ If we want to start by analyzing just the first three files in alphabetical orde
 
 ~~~
 import glob
-import numpy
+import numpy as np
 import matplotlib.pyplot as plt
 
 filenames = sorted(glob.glob('inflammation*.csv'))
@@ -68,7 +68,7 @@ filenames = filenames[0:3]
 for filename in filenames:
     print(filename)
 
-    data = numpy.loadtxt(fname=filename, delimiter=',')
+    data = np.loadtxt(fname=filename, delimiter=',')
 
     fig = plt.figure(figsize=(10.0, 3.0))
 
@@ -77,13 +77,13 @@ for filename in filenames:
     axes3 = fig.add_subplot(1, 3, 3)
 
     axes1.set_ylabel('average')
-    axes1.plot(numpy.mean(data, axis=0))
+    axes1.plot(np.mean(data, axis=0))
 
     axes2.set_ylabel('max')
-    axes2.plot(numpy.max(data, axis=0))
+    axes2.plot(np.max(data, axis=0))
 
     axes3.set_ylabel('min')
-    axes3.plot(numpy.min(data, axis=0))
+    axes3.plot(np.min(data, axis=0))
 
     fig.tight_layout()
     plt.show()
@@ -147,18 +147,18 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > ## Solution
 > > ~~~
 > > import glob
-> > import numpy
+> > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
 > > filenames = sorted(glob.glob('inflammation*.csv'))
 > >
-> > data0 = numpy.loadtxt(fname=filenames[0], delimiter=',')
-> > data1 = numpy.loadtxt(fname=filenames[1], delimiter=',')
+> > data0 = np.loadtxt(fname=filenames[0], delimiter=',')
+> > data1 = np.loadtxt(fname=filenames[1], delimiter=',')
 > >
 > > fig = plt.figure(figsize=(10.0, 3.0))
 > >
 > > plt.ylabel('Difference in average')
-> > plt.plot(numpy.mean(data0, axis=0) - numpy.mean(data1, axis=0))
+> > plt.plot(np.mean(data0, axis=0) - np.mean(data1, axis=0))
 > >
 > > fig.tight_layout()
 > > plt.show()
@@ -173,7 +173,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 >
 > ~~~
 > filenames = glob.glob('inflammation*.csv')
-> composite_data = numpy.zeros((60,40))
+> composite_data = np.zeros((60,40))
 > for filename in filenames:
 >     # sum each new file's data into composite_data as it's read
 >     #
@@ -187,14 +187,14 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > ## Solution
 > > ~~~
 > > import glob
-> > import numpy
+> > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
 > > filenames = glob.glob('inflammation*.csv')
-> > composite_data = numpy.zeros((60,40))
+> > composite_data = np.zeros((60,40))
 > >
 > > for filename in filenames:
-> >     data = numpy.loadtxt(fname = filename, delimiter=',')
+> >     data = np.loadtxt(fname = filename, delimiter=',')
 > >     composite_data = composite_data + data
 > >
 > > composite_data = composite_data / len(filenames)
@@ -206,13 +206,13 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > axes3 = fig.add_subplot(1, 3, 3)
 > >
 > > axes1.set_ylabel('average')
-> > axes1.plot(numpy.mean(composite_data, axis=0))
+> > axes1.plot(np.mean(composite_data, axis=0))
 > >
 > > axes2.set_ylabel('max')
-> > axes2.plot(numpy.max(composite_data, axis=0))
+> > axes2.plot(np.max(composite_data, axis=0))
 > >
 > > axes3.set_ylabel('min')
-> > axes3.plot(numpy.min(composite_data, axis=0))
+> > axes3.plot(np.min(composite_data, axis=0))
 > >
 > > fig.tight_layout()
 > >

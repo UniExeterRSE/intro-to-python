@@ -51,7 +51,7 @@ claims:
 Now let's take a look at the average inflammation over time:
 
 ~~~
-ave_inflammation = numpy.mean(data, axis=0)
+ave_inflammation = np.mean(data, axis=0)
 ave_plot = plt.plot(ave_inflammation)
 plt.show()
 ~~~
@@ -66,7 +66,7 @@ the medication takes 3 weeks to take effect.  But a good data scientist doesn't 
 average of a dataset, so let's have a look at two other statistics:
 
 ~~~
-max_plot = plt.plot(numpy.max(data, axis=0))
+max_plot = plt.plot(np.max(data, axis=0))
 plt.show()
 ~~~
 {: .language-python}
@@ -74,7 +74,7 @@ plt.show()
 ![A line graph showing the maximum inflammation across all patients over a 40-day period.](../fig/inflammation-01-maximum.svg)
 
 ~~~
-min_plot = plt.plot(numpy.min(data, axis=0))
+min_plot = plt.plot(np.min(data, axis=0))
 plt.show()
 ~~~
 {: .language-python}
@@ -103,7 +103,7 @@ Here are our three plots side by side:
 import numpy
 import matplotlib.pyplot as plt
 
-data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 
 fig = plt.figure(figsize=(10.0, 3.0))
 
@@ -112,13 +112,13 @@ axes2 = fig.add_subplot(1, 3, 2)
 axes3 = fig.add_subplot(1, 3, 3)
 
 axes1.set_ylabel('average')
-axes1.plot(numpy.mean(data, axis=0))
+axes1.plot(np.mean(data, axis=0))
 
 axes2.set_ylabel('max')
-axes2.plot(numpy.max(data, axis=0))
+axes2.plot(np.max(data, axis=0))
 
 axes3.set_ylabel('min')
-axes3.plot(numpy.min(data, axis=0))
+axes3.plot(np.min(data, axis=0))
 
 fig.tight_layout()
 
@@ -154,7 +154,7 @@ formats, including SVG, PDF, and JPEG.
 > Importing `pyplot` this way means that after the initial import, rather than writing
 > `matplotlib.pyplot.plot(...)`, you can now write `plt.plot(...)`.
 > Another common convention is to use the shortcut `import numpy as np` when importing the
-> NumPy library. We then can write `np.loadtxt(...)` instead of `numpy.loadtxt(...)`,
+> NumPy library. We then can write `np.loadtxt(...)` instead of `np.loadtxt(...)`,
 > for example.
 >
 > Some people prefer these shortcuts as it is quicker to type and results in shorter
@@ -191,7 +191,7 @@ formats, including SVG, PDF, and JPEG.
 > > ~~~
 > > # One method
 > > axes3.set_ylabel('min')
-> > axes3.plot(numpy.min(data, axis=0))
+> > axes3.plot(np.min(data, axis=0))
 > > axes3.set_ylim(0,6)
 > > ~~~
 > > {: .language-python}
@@ -200,10 +200,10 @@ formats, including SVG, PDF, and JPEG.
 > > ## Solution
 > > ~~~
 > > # A more automated approach
-> > min_data = numpy.min(data, axis=0)
+> > min_data = np.min(data, axis=0)
 > > axes3.set_ylabel('min')
 > > axes3.plot(min_data)
-> > axes3.set_ylim(numpy.min(min_data), numpy.max(min_data) * 1.1)
+> > axes3.set_ylim(np.min(min_data), np.max(min_data) * 1.1)
 > > ~~~
 > > {: .language-python}
 > {: .solution}
@@ -221,10 +221,10 @@ formats, including SVG, PDF, and JPEG.
 > > One way to do avoid this is to use the Matplotlib `drawstyle` option:
 > >
 > > ~~~
-> > import numpy
+> > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+> > data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 > >
 > > fig = plt.figure(figsize=(10.0, 3.0))
 > >
@@ -233,13 +233,13 @@ formats, including SVG, PDF, and JPEG.
 > > axes3 = fig.add_subplot(1, 3, 3)
 > >
 > > axes1.set_ylabel('average')
-> > axes1.plot(numpy.mean(data, axis=0), drawstyle='steps-mid')
+> > axes1.plot(np.mean(data, axis=0), drawstyle='steps-mid')
 > >
 > > axes2.set_ylabel('max')
-> > axes2.plot(numpy.max(data, axis=0), drawstyle='steps-mid')
+> > axes2.plot(np.max(data, axis=0), drawstyle='steps-mid')
 > >
 > > axes3.set_ylabel('min')
-> > axes3.plot(numpy.min(data, axis=0), drawstyle='steps-mid')
+> > axes3.plot(np.min(data, axis=0), drawstyle='steps-mid')
 > >
 > > fig.tight_layout()
 > >
@@ -253,12 +253,12 @@ formats, including SVG, PDF, and JPEG.
 
 ## Make Your Own Plot
 >
-> Create a plot showing the standard deviation (`numpy.std`)
+> Create a plot showing the standard deviation (`np.std`)
 > of the inflammation data for each day across all patients.
 >
 > > ## Solution
 > > ~~~
-> > std_plot = plt.plot(numpy.std(data, axis=0))
+> > std_plot = plt.plot(np.std(data, axis=0))
 > > plt.show()
 > > ~~~
 > > {: .language-python}
@@ -272,10 +272,10 @@ formats, including SVG, PDF, and JPEG.
 >
 > > ## Solution
 > > ~~~
-> > import numpy
+> > import numpy as np
 > > import matplotlib.pyplot as plt
 > >
-> > data = numpy.loadtxt(fname='inflammation-01.csv', delimiter=',')
+> > data = np.loadtxt(fname='inflammation-01.csv', delimiter=',')
 > >
 > > # change figsize (swap width and height)
 > > fig = plt.figure(figsize=(3.0, 10.0))
@@ -286,13 +286,13 @@ formats, including SVG, PDF, and JPEG.
 > > axes3 = fig.add_subplot(3, 1, 3)
 > >
 > > axes1.set_ylabel('average')
-> > axes1.plot(numpy.mean(data, axis=0))
+> > axes1.plot(np.mean(data, axis=0))
 > >
 > > axes2.set_ylabel('max')
-> > axes2.plot(numpy.max(data, axis=0))
+> > axes2.plot(np.max(data, axis=0))
 > >
 > > axes3.set_ylabel('min')
-> > axes3.plot(numpy.min(data, axis=0))
+> > axes3.plot(np.min(data, axis=0))
 > >
 > > fig.tight_layout()
 > >

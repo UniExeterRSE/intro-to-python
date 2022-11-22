@@ -218,7 +218,7 @@ def s(p):
     d = 0
     for v in p:
         d += (v - m) * (v - m)
-    return numpy.sqrt(d / (len(p) - 1))
+    return np.sqrt(d / (len(p) - 1))
 ~~~
 {: .language-python}
 
@@ -235,7 +235,7 @@ def std_dev(sample):
     for value in sample:
         sum_squared_devs += (value - sample_mean) * (value - sample_mean)
 
-    return numpy.sqrt(sum_squared_devs / (len(sample) - 1))
+    return np.sqrt(sum_squared_devs / (len(sample) - 1))
 ~~~
 {: .language-python}
 
