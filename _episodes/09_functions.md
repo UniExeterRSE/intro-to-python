@@ -409,7 +409,7 @@ It is good habit to write a docstring for every single function you create. Even
 
 
 
-> ## Defining Defaults
+## Defining Defaults
 >
 > Rewrite the `rescale` function so that it scales data to lie between `0.0` and `1.0` by default,
 > but will allow the caller to specify lower and upper bounds if they want.
@@ -434,7 +434,7 @@ It is good habit to write a docstring for every single function you create. Even
 > {: .solution}
 {: .challenge}
 
-> ## Variables Inside and Outside Functions
+## Variables Inside and Outside Functions
 >
 > What does the following piece of code display when run --- and why?
 >
@@ -475,7 +475,7 @@ It is good habit to write a docstring for every single function you create. Even
 > {: .solution}
 {: .challenge}
 
-> ## Mixing Default and Non-Default Parameters
+## Mixing Default and Non-Default Parameters
 >
 > Given the following code:
 >

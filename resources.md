@@ -17,6 +17,12 @@ you have to start trying things out, and creating projects. For example, you cou
 - [freecodecamp.org](https://www.freecodecamp.org/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
 
+## Some great Python courses
+
+- [Practical Python Programming](https://dabeaz-course.github.io/practical-python/Notes/Contentshtml)
+- [University of Helsinki Data Analysis Course](https://dap-21.mooc.fi/)
+- [30 days of Python](https://github.com/Asabeneh/30-Days-Of-Python)
+
 ## Research Software Engineering
 
 - Our RSE friends at UCL have a great [RSE-focused Python course](http://github-pages.ucl.ac.uk/rsd-engineeringcourse/)
