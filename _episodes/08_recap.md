@@ -122,7 +122,7 @@ print(car_info)
 We can make a dictionary using key, values pairs. Dictionaries are useful when we want to return values, based on a value name, and not an index. For example:
 
 ~~~
-car_info = {
+car_dict = {
     "make": "Citroen", 
     "model": "Berlingo", 
     "color": "blue", 
@@ -131,8 +131,8 @@ car_info = {
     "other_doors": 3, 
     "coolness_pc": 95
 }
-print(car_info)
-print(type(car_info))
+print(car_dict)
+print(type(car_dict))
 ~~~
 {: .language-python}
 ~~~
@@ -144,7 +144,7 @@ print(type(car_info))
 We can then access values based on their key. To access the value associated with the coolness percentage key:
 
 ~~~
-print(car_info["coolness_pc"])
+print(car_dict["coolness_pc"])
 ~~~
 {: .language-python}
 ~~~
@@ -155,18 +155,9 @@ print(car_info["coolness_pc"])
 We can add data to a dictionary in-place, as it is mutable.
 
 ~~~
-car_info = {
-    "make": "Citroen", 
-    "model": "Berlingo", 
-    "color": "blue", 
-    "owner": "Simon", 
-    "sliding_doors": 2, 
-    "other_doors": 3, 
-    "coolness_pc": 95
-}
 current_price = 1850
-car_info["current_price"] = current_price
-print(car_info)
+car_dict["current_price"] = current_price
+print(car_dict)
 ~~~
 {: .language-python}
 ~~~
@@ -177,7 +168,7 @@ print(car_info)
 Finally, we can access just the keys, just the values, or the key, value pairs of a dictionary, using built-in methods:
 
 ~~~
-car_fields = list(car_info.keys())
+car_fields = list(car_dict.keys())
 print(car_fields)
 ~~~
 {: .language-python}
@@ -188,13 +179,13 @@ print(car_fields)
 
 ## Control flow
 
-We can use `if`, `elif` and `else` statements to perform different tasks, based on data values. For example, imagine if we are trying to sell our car, stored in the car_info dictionary. Lets say that we will indicate on our inventory system when a buyer has offered more than 90% of the asking price of a car. We will update the boolean flag when we should sell it.
+We can use `if`, `elif` and `else` statements to perform different tasks, based on data values. For example, imagine if we are trying to sell our car, stored in the `car_dict` dictionary. Lets say that we will indicate on our inventory system when a buyer has offered more than 90% of the asking price of a car. We will update the boolean flag when we should sell it.
 
 ~~~
 sell_flag = False
 asking_price = 1500
 
-current_price = car_info["current_price"]
+current_price = car_dict["current_price"]
 
 if asking_price >= current_price * 0.9:
     sell_flag = True
@@ -217,7 +208,7 @@ desired_cars = ["Audi", "Mercedes", "Aston Martin"]
 asking_price = 556
 trade_in_car = "Audi"
 
-current_price = car_info["current_price"]
+current_price = car_dict["current_price"]
 
 if asking_price >= current_price * 0.9:
     sell_flag = True
@@ -236,10 +227,10 @@ Great to do business with you!
 
 ## Loops
 
-It is often very helpful to perform calculations over a number of items, usually stored in a data structure. If the data structure is iterable, then we can write a `for` loop to execute operations over each element. For example, lets print out every value in our `car_info` dictionary:
+It is often very helpful to perform calculations over a number of items, usually stored in a data structure. If the data structure is iterable, then we can write a `for` loop to execute operations over each element. For example, lets print out every value in our `car_dict` dictionary:
 
 ~~~
-for value in car_info.values():
+for value in car_dict.values():
     print(value)
 ~~~
 {: .language-python}
@@ -258,7 +249,7 @@ Simon
 Lets try to multiply every value by 10. Why are some results strange?
 
 ~~~
-for value in car_info.values():
+for value in car_dict.values():
     new_value = value * 10
     print(new_value)
 ~~~
