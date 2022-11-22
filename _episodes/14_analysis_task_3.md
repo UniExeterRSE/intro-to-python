@@ -168,7 +168,7 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 {: .challenge}
 
 ## Generate Composite Statistics
->
+
 > Use each of the files once to generate a dataset containing values averaged over all patients:
 >
 > ~~~
@@ -221,6 +221,8 @@ flare-ups at all throughout the trial, suggesting that they may not even suffer 
 > > {: .language-python}
 >{: .solution}
 {: .challenge}
+
+## Conclusions
 
 After spending some time investigating the heat map and statistical plots, as well as
 doing the above exercises to plot differences between datasets and to generate composite

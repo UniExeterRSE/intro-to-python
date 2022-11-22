@@ -18,7 +18,7 @@ At the end of this lesson you will be able to:
 
 ## The Python standard library
 
-So far, we have only used a tiny portion of the Python Standard Library. This is a collection of modules that are installed when you install Python. Lets jump right in.
+So far, we have only used a tiny portion of the Python Standard Library. This is a collection of modules that are installed when you install Python. However, the Standard Library contains many more modules that will be of use to us. Lets jump right in.
 
 ## Importing a module
 
@@ -65,7 +65,7 @@ math.cos(math.pi / 4)
 ~~~
 {: .output}
 
-In addition to reading the documentation (seriously, do this first), you can type `math.` and then hit the tab key. This should give you a list of everything available to use.
+In addition to reading the documentation, you can type `math.` and then hit the tab key. This should give you a list of everything available to use.
 
 ## Exercise: generate random numbers
 

@@ -329,7 +329,7 @@ print(numpy.mean(data))
 `mean` is a function that takes
 an array as an argument.
 
-> ## Not All Functions Have Input
+## Not All Functions Have Input
 >
 > Generally, a function uses inputs to produce outputs.
 > However, some functions produce outputs without
