@@ -27,3 +27,10 @@ Most of the styling for the site is found in `_sass/jekyll-theme-slate.scss`. Ja
 ## Additional course materials
 
 A number of additional course materials have been produced for this course. Leader notes are provided in the folder `other_documents`, as well as the old content specific objectives. In addition, a number of notebooks have been created in the folder `notebooks/session_2`. These are not used or mentioned on the static/deployed site, but can be downloaded and used for presenting. 
+
+## Further workshops
+
+During the development process for Intro to Python, two additional notebooks, for two discrete lessons/workshop tasks, were also created. Whilst these were not used in the first iteration of the course, they could be added in the future. They are listed below:
+
+* [Pendulum modelling](https://github.com/jshipton/intro_to_python) - Jemma Shipton
+* [Road traffic accident data analysis](https://github.com/sieste/data-analysis-with-pandas) - Stefan Siegert
