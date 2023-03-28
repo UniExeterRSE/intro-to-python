@@ -38,6 +38,22 @@
     <div id="footer_wrap" class="outer">
       <footer class="inner">
         {% include prev_next_navbar.html %}
+        <p class="copyright">The material on this page is © University of Exeter.</p>
+        {% if page.adapted %}
+        <p class="copyright">Material other than code snippets and example
+          programs is licensed under <a href ="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0</a>. 
+          It has been adapted from <a href="{{ page.attrib_link }}">{{ page.attrib_name }}</a>
+          which is © {{ page.attrib_copywrite }} and licensed under <a href ={{ page.attrib_license_link }}>{{ page.attrib_license }}</a>.
+        </p>
+        {% else %}
+        <p class="copyright">Material other than code snippets and example
+          programs is licensed under <a href ="https://creativecommons.org/licenses/by/4.0/">Creative Commons BY 4.0</a>.
+        </p>
+        {% endif %} 
+        <p class="copyright">The code snippets and example programs on this page
+          are MIT licensed, according to the licence notice found in this website's
+          <a href="https://github.com/UniExeterRSE/intro-to-r/blob/main/LICENSE" target="_blank" rel="external noreferrer">code repository</a>.
+        </p>
         {% if site.github.is_project_page %}
         <p class="copyright">Workshop maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
         {% endif %}
