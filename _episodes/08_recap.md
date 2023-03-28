@@ -5,6 +5,7 @@ order: 9
 session: 2
 length: 30
 toc: true
+adapted: false
 ---
 
 ## A quick recap:
