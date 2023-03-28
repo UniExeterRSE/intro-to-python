@@ -5,6 +5,7 @@ order: 8
 session: 1
 length: 20
 toc: true
+adapted: false
 ---
 
 ## Swapping the contents of variables
