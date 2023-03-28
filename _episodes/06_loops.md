@@ -5,6 +5,12 @@ order: 7
 session: 1
 length: 45
 toc: true
+adapted: true
+attrib_name: Programming with Python - Repeating Actions with Loops
+attrib_link: https://swcarpentry.github.io/python-novice-inflammation/05-loop/index.html
+attrib_copywrite: Software Carpentry
+attrib_license: CC-BY 4.0
+attrib_license_link: https://creativecommons.org/licenses/by/4.0/
 ---
 
 ## Learning Objectives
