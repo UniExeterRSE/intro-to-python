@@ -36,11 +36,10 @@ This a hybrid workshop run over 2 sessions.
 
 |Session name | Dates | Time  | Venue | Sign up link |
 |--- |--- |--- |--- | --- |
-| Drop-in setup help |14th November 2022 | 10:00-12:00 | Online on Teams |  Sent via email  |
-| Session 1 | 16th November 2022 | 10:00-13:00 | Streatham: Old Library Training Room 4  | Now closed! |
-| Session 2 | 23rd November 2022 | 10:00-13:00 | Streatham: Old Library Training Room 4  | Now closed! |
+| Drop-in setup help |Friday 27th October 2023 | 10:00-11:30 | Online on Teams |  Sent via email  |
+| Session 1 | Wednesday 1st November 2023 | 10:00-13:00 | Streatham: Old Library Training Room 4  | <https://uniexeterrse.github.io/workshop-homepage/workshops.html> |
+| Session 2 | Wednesday 8th November 2023 | 10:00-13:00 | Streatham: Old Library Training Room 4  |  |
 
-Registration for this course is handled by the folks at [University of Exeter Researcher Development](https://www.exeter.ac.uk/research/doctoralcollege/early-career-researchers/traininganddevelopment/rdprogramme/).
 
 ## Set-up instructions for attendees
 
