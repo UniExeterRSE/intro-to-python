@@ -20,13 +20,13 @@ Jekyll is a ruby Gem. A simple Gemfile has been added. To test the site locally,
 
 Then open the site at the default server address of `http://127.0.0.1:4000`.
 
-## JavaScript and bootstrap
+## JavaScript & styling
 
-Most of the styling for the site is found in `_sass/jekyll-theme-slate.scss`. JavaScript, Jquery, and and `bootstrap.css` have been added for the sole purpose of create unfolding and unfolding solution blocks, with bootstrap icons next to them. This has been lifted from the Carpentries Python lesson repository, and probably contains far more fluff than it needs.
+Most of the styling for the site is found in `_sass/jekyll-theme-slate.scss`. Vanilla JavaScript is used to fold and unfold solution blocks. These blocks also use two icons from the [fontawesome](fontawesome.com) library. This open source icon library is far nicer to use than bootstrap.css. The stylesheet is imported in `_layouts/page.html`.
 
 ## Additional course materials
 
-A number of additional course materials have been produced for this course. Leader notes are provided in the folder `other_documents`, as well as the old content specific objectives. In addition, a number of notebooks have been created in the folder `notebooks/session_2`. These are not used or mentioned on the static/deployed site, but can be downloaded and used for presenting. 
+A number of additional course materials have been produced for this course. Leader notes are provided in the folder `other_documents`, as well as the old content specific objectives. In addition, a number of notebooks have been created in the folder `notebooks/session_2`. These are not used or mentioned on the static/deployed site, but can be downloaded and used for presenting.
 
 ## Further workshops
 
