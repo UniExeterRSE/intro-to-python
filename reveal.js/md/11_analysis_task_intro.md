@@ -1,11 +1,13 @@
----
+<!-- ---
 layout: page
 title: Data Analysis Introduction
 order: 12
 session: 2
 length: 10
 toc: true
----
+--- -->
+
+# Data Analysis Introduction
 
 ## Learning Objectives
 

@@ -1,11 +1,13 @@
----
+<!-- ---
 layout: page
 title: Data Analysis Task 1
 order: 12
 session: 2
 length: 30
 toc: true
----
+--- -->
+
+# Data Analysis Task 1
 
 ## Learning Objectives
 

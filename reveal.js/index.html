@@ -36,6 +36,13 @@ so I've made the fonts smaller, and when I want titles in capitals I'll write th
 					text-transform: None;
 					text-align: left;
 				}
+				.reveal h1 {
+					color: lightblue;
+					font-size: 1.4em;
+					font-style: italic;
+					text-transform: none;
+					text-align: center;
+				}
 				.reveal h2 {
 					font-size: 1.2em;
 					text-transform: None;
@@ -53,17 +60,20 @@ so I've made the fonts smaller, and when I want titles in capitals I'll write th
 				}
 			</style>
 			<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
-			<section data-markdown="00_welcome.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
-			<section data-markdown="01_motivation.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			<section data-markdown="md/00_welcome.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/01_motivation.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
 			</section>
-			<section data-markdown="02_fundamentals.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			<section data-markdown="md/02_fundamentals.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
 			</section>
-			<section data-markdown="03_lists.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
-			<section data-markdown="04_dictionaries.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			<section data-markdown="md/03_lists.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/04_dictionaries.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
 			</section>
-			<section data-markdown="05_control_flow.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			<section data-markdown="md/05_control_flow.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
 			</section>
-			<section data-markdown="06_loops.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/06_loops.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/07_additional_exercises.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/08_recap.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/09_functions.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
 
 		</div>
 	</div>
@@ -85,7 +95,8 @@ so I've made the fonts smaller, and when I want titles in capitals I'll write th
 			center: false,
 
 			// Learn about plugins: https://revealjs.com/plugins/
-			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX]
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+			markdown: {gfm: true}
 		});
 	</script>
 </body>

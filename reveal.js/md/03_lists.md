@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Lists
 order: 4
@@ -11,7 +11,9 @@ attrib_link: https://swcarpentry.github.io/python-novice-inflammation/04-lists/i
 attrib_copywrite: Software Carpentry
 attrib_license: CC-BY 4.0
 attrib_license_link: https://creativecommons.org/licenses/by/4.0/
----
+--- -->
+
+# Lists
 
 ## Learning Objectives
 
@@ -23,14 +25,15 @@ At the end of this lesson you will be able to:
 - Append values to an existing list
 - Create and manipulate nested lists
 
+
 ## Key points
 
-- "`[value1, value2, value3, ...]` creates a list."
-- "Lists can contain any Python object, including lists (i.e., list of lists)."
-- "Lists are indexed and sliced with square brackets (e.g., list[0] and
-list[2:9]), in the same way as strings and arrays."
-- "Lists are mutable (i.e., their values can be changed in place)."
-- "Strings are immutable (i.e., the characters in them cannot be changed)."
+- `[value1, value2, value3, ...]` creates a list.
+- Lists can contain any Python object, including lists (i.e., list of lists).
+- Lists are indexed and sliced with square brackets (e.g., list[0] and
+list[2:9]), in the same way as strings and arrays.
+- Lists are mutable (i.e., their values can be changed in place).
+- Strings are immutable (i.e., the characters in them cannot be changed).
 
 ## Python lists
 
@@ -38,26 +41,24 @@ Lists are a data structure in Python that can contain a changeable (or mutable) 
 
 We create a list by putting values inside square brackets and separating the values with commas:
 
-~~~
+~~~python
 odds = [1, 3, 5, 7]
 print('odds are:', odds)
 ~~~
-{: .language-python}
 
 ~~~
 odds are: [1, 3, 5, 7]
 ~~~
-{: .output}
+
 
 We can access elements of a list using indices -- numbered positions of elements in the list.
 These positions are numbered starting at 0, so the first element has an index of 0.
 
-~~~
+~~~python
 print('first element:', odds[0])
 print('last element:', odds[3])
 print('"-1" element:', odds[-1])
 ~~~
-{: .language-python}
 
 ~~~
 first element: 1

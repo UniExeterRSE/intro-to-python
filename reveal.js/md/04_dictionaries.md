@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Dictionaries
 order: 5
@@ -6,7 +6,9 @@ session: 1
 length: 15
 toc: true
 adapted: false
----
+--- -->
+
+# Dictionaries
 
 ## Learning Objectives
 

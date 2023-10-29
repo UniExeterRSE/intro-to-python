@@ -1,4 +1,4 @@
----
+<!-- ---
 layout: page
 title: Control flow
 order: 6
@@ -11,7 +11,9 @@ attrib_link: https://swcarpentry.github.io/python-novice-inflammation/07-cond/in
 attrib_copywrite: Software Carpentry
 attrib_license: CC-BY 4.0
 attrib_license_link: https://creativecommons.org/licenses/by/4.0/
----
+--- -->
+
+# Control flow
 
 ## Learning Objectives
 
@@ -21,6 +23,7 @@ At the end of this lesson you will be able to:
 - Understand the basics of control flow
 - Explain the basic conditional statements, such as `if`, `else`, `and`, `not`, and `or`
 - Write some simple expressions using these statements
+
 
 ## Key points
 - "Use `if condition` to start a conditional statement, `elif condition` to
@@ -32,6 +35,7 @@ At the end of this lesson you will be able to:
 - "Zero, the empty string, and the empty list are considered false;
    all other numbers, strings, and lists are considered true."
 - "`True` and `False` represent truth values."
+
 
 ## Conditionals
 
@@ -106,53 +110,52 @@ else:
 Note that to test for equality we use a double equals sign `==`
 rather than a single equals sign `=` which is used to assign values.
 
+
 ## Comparing in Python
 
-> Along with the `>` and `==` operators we have already used for comparing values in our
-> conditionals, there are a few more options to know about:
->
-> - `>`: greater than
-> - `<`: less than
-> - `==`: equal to
-> - `!=`: does not equal
-> - `>=`: greater than or equal to
-> - `<=`: less than or equal to
-{: .callout}
+Along with the `>` and `==` operators there are a few others:
 
-We can also combine tests using `and` and `or`.
-`and` is only true if both parts are true:
+|   |   |
+| - | - |
+| `>` | greater than |
+| `<` | less than |
+| `==`| equal to |
+| `!=`| not equal to |
+| `>=`| greater than or equal to |
+| `<=`| less than or equal to |
 
-~~~
+
+We can also combine tests using `and`:
+
+~~~python
 if (1 > 0) and (-1 >= 0):
     print('both parts are true')
 else:
     print('at least one part is false')
 ~~~
-{: .language-python}
 
-~~~
+~~~txt
 at least one part is false
 ~~~
-{: .output}
 
-while `or` is true if at least one part is true:
+while `or` is `True` if at least one part is `True`:
 
-~~~
+~~~python
 if (1 < 0) or (1 >= 0):
     print('at least one test is true')
 ~~~
-{: .language-python}
 
-~~~
+~~~txt
 at least one test is true
 ~~~
-{: .output}
+
 
 > ## `True` and `False`
 > `True` and `False` are special words in Python called `booleans`,
 > which represent truth values. A statement such as `1 < 0` returns
 > the value `False`, while `-1 < 0` returns the value `True`.
 {: .callout}
+
 
 ## How Many Paths?
 
@@ -182,6 +185,7 @@ at least one test is true
 > {: .solution}
 {: .challenge}
 
+
 ## What Is Truth?
 
 > `True` and `False` booleans are not the only values in Python that are true and false.
@@ -206,6 +210,7 @@ at least one test is true
 > {: .language-python}
 {: .challenge}
 
+
 ## That's Not Not What I Meant
 
 > Sometimes it is useful to check whether some condition is not true.
@@ -224,6 +229,7 @@ at least one test is true
 > ~~~
 > {: .language-python}
 {: .challenge}
+
 
 ## Close Enough
 
