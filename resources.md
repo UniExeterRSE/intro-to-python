@@ -10,6 +10,17 @@ There is a huge amount of amazing resources out there! From full-blown courses, 
 The best way to learn is by doing! Reading the resources below is a great start, but to really learn how to program,
 you have to start trying things out, and creating projects. For example, you could start by re-creating an existing piece of data analysis that you have previously completed in an Excel workbook, graphs and all. Maybe create a simple website to display your photos. This is how we all started.
 
+
+## Essentials
+
+- [Anaconda](https://www.anaconda.com/download)
+- [Official Python documentation](https://docs.python.org/)
+
+## Web based coding
+
+- [Replit](https://replit.com/)
+- [Exercism](https://exercism.org/)
+
 ## Great Python websites
 
 - [Real Python Tutorials](https://realpython.com/)
@@ -33,6 +44,7 @@ you have to start trying things out, and creating projects. For example, you cou
 
 These might be a bit more complex!
 
+- [Kaggle - data science competitions](https://www.kaggle.com/)
 - [Web Development in Python](https://www.fullstackpython.com/web-development.html)
 - [Statistics and Scientific Computing with Python](https://scipy-lectures.org/index.html)
 - [Machine Learning from Scratch](https://github.com/eriklindernoren/ML-From-Scratch#about)

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Introduction to Python</title>
+
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/black.css">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<!-- The reveal.js default style is good for small screens, but I like to get a bit more content in each slide
+so I've made the fonts smaller, and when I want titles in capitals I'll write them in CAPITALS. -->
+			<style>
+				.reveal p {
+					font-size: 0.65em;
+					text-transform: None;
+					text-align: left;
+				}
+				.reveal code {
+					color: lightblue;
+					font-family: monospace;
+					font-size: inherit;
+				}
+				.reveal ul {
+					font-size: 0.65em;
+					text-transform: None;
+					text-align: left;
+				}
+				.reveal h1 {
+					color: lightblue;
+					font-size: 1.4em;
+					font-style: italic;
+					text-transform: none;
+					text-align: center;
+				}
+				.reveal h2 {
+					font-size: 1.2em;
+					text-transform: None;
+					text-align: center;
+				}
+
+				.reveal h3 {
+					font-size: 1.0em;
+					text-transform: None;
+					text-align: left;
+				}
+
+				.reveal code {
+					font-size: 0.65em;
+				}
+			</style>
+			<!-- Use external markdown resource, separate slides by three newlines; vertical slides by two newlines -->
+			<!-- <section data-markdown="md/00_welcome.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/01_motivation.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			</section> -->
+			<section data-markdown="md/00_agenda.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/01_hello_python.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/02_fundamentals.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			</section>
+			<section data-markdown="md/03_lists.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/04_dictionaries.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			</section>
+			<section data-markdown="md/05_control_flow.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n">
+			</section>
+			<section data-markdown="md/06_loops.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<!-- <section data-markdown="md/07_additional_exercises.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section> -->
+			<section data-markdown="md/07_homework.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<!-- <section data-markdown="md/08_recap.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section>
+			<section data-markdown="md/09_functions.md" data-separator="^\n\n\n" data-separator-vertical="^\n\n"></section> -->
+
+		</div>
+	</div>
+
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script src="plugin/math/math.js"></script>
+	<script>
+		// More info about initialization & config:
+		// - https://revealjs.com/initialization/
+		// - https://revealjs.com/config/
+		Reveal.initialize({
+			hash: true,
+			controls: true,
+			progress: true,
+			history: true,
+			center: false,
+
+			// Learn about plugins: https://revealjs.com/plugins/
+			plugins: [RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX],
+			markdown: {gfm: true}
+		});
+	</script>
+</body>
+
+</html>
