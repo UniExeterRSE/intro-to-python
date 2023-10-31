@@ -24,12 +24,6 @@ At the end of this lesson you will be able to:
 - Write some simple loops to perform repeat calculations
 - Investigate what is happening to variables as a `for` loop progresses
 
-## Key points
-
-- "Use `for variable in sequence` to process the elements of a sequence one at a time."
-- "The body of a `for` loop must be indented."
-- "Use `len(thing)` to determine the length of something that contains other values."
-
 
 ## Introduction to loops
 
@@ -377,6 +371,8 @@ print(y)
 ~~~
 
 
+## Exercise
+
 Write a loop using `enumerate(coefs)` which computes the value `y` of any
 polynomial, given `x` and `coefs`.
 
@@ -396,9 +392,6 @@ for idx, coef in enumerate(coefs):
 2. Test it on a few individual words and full sentences.
 3. Once you are done, compare your solution to your neighbour's.
 
-Did you make the same decisions about how to handle the letter 'y'
-(which some people think is a vowel, and some do not)?
-
 
 ## Solution
 
@@ -413,9 +406,27 @@ for char in sentence:
 print('The number of vowels in this string is ' + str(count))
 ~~~
 
+Did you make the same decisions about how to handle the letter 'y'
+(which some people think is a vowel, and some do not)?
 
-## while, break and continue
 
-The for loop, in combination with range() meets most data analysis needs.
-....
+## while loops
 
+The for loop, in combination with range() meets most data analysis needs, but sometimes we might not know in advance how many iterations are needed.
+
+```python
+poem = open('poem.txt')
+line = poem.readline()
+count = 1
+while line:
+    print(count, '. ', line)
+    line = poem.readline()
+    count += 1
+```
+
+
+## Key points
+
+- "Use `for variable in sequence` to process the elements of a sequence one at a time."
+- "The body of a `for` loop must be indented."
+- "Use `len(thing)` to determine the length of something that contains other values."
