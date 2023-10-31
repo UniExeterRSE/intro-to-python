@@ -55,6 +55,9 @@ This is similar to accessing a value stored in a list. However, the key does not
 
 Retrieve the birth year for Isaac Newton from the dictionary of birth years.
 
+## Try it
+
+
 ## Solution
 ~~~python
 birth_years = {'Newton': 1642, 'Darwin': 1809, 'Einstein': 1979, 'Nobel': 1833}
@@ -98,6 +101,9 @@ print(birth_years)
 ## Add more scientists to the dictionary
 
 Add two more scientist's birth years to our dictionary of birth years.
+
+## Try it
+
 
 ## Solution
 

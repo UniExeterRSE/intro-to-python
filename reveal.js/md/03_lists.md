@@ -271,6 +271,8 @@ If not, try to change your approach to make it more robust.
 
  Hint: Remember that indices can be negative as well as positive
 
+## Try it
+
 
 ## Solution
 Use negative indices to count elements from the end of a container (such as list or string):
@@ -281,10 +283,10 @@ list_for_slicing[-4:]
 ~~~
 
 
-## Non-continuous slices
+## Non-contiguous slices
 
 What if we want to take a subset of entries
-that aren't next to each other in the sequence?
+that aren't adjacent in the sequence?
 
 You can achieve this by providing a third argument
 to the range within the brackets, called the _step size_.
@@ -331,6 +333,9 @@ of the string)?
 ~~~txt
 I notpssgre ntesae
 ~~~
+
+## Try it
+
 
 ## Solution
 
@@ -384,6 +389,7 @@ Using len() to get last entry: ['sep', 'oct', 'nov', 'dec']
 Omitting ending index: ['sep', 'oct', 'nov', 'dec']
 ~~~
 
+
 ## Overloading
 
 `+` usually means addition, but when used on strings or lists, it means "concatenate".
@@ -401,9 +407,8 @@ print(repeats)
 3.  `[[2, 4, 6, 8, 10],[2, 4, 6, 8, 10]]`
 4.  `[2, 4, 6, 8, 10, 4, 8, 12, 16, 20]`
 
-The technical term for this is *operator overloading*:
-a single operator, like `+` or `*`,
-can do different things depending on what it's applied to.
+## Try it
+
 
 ## Solution
 
@@ -419,6 +424,10 @@ It's equivalent to:
 ~~~python
 counts + counts
 ~~~
+
+The technical term for this is *operator overloading*:
+a single operator, like `+` or `*`,
+can do different things depending on what it's applied to.
 
 
 ## Key points
