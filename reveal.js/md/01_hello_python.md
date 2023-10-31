@@ -2,7 +2,7 @@
 # Hello Python
 
 Please follow along, testing your understand by typing the examples into a Python
-interpretter.
+interpreter.
 
 ### Jupyter Lab
 

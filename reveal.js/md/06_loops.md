@@ -267,6 +267,8 @@ Using `range`, write a loop that uses `range` to print the first 3 natural numbe
 3
 ~~~
 
+## Try it
+
 
 ## Solution
 ~~~python
@@ -291,6 +293,8 @@ How many times is the body of the loop executed?
 * 5 times
 * 6 times
 
+## Try it
+
 
 ## Solution
 
@@ -312,6 +316,8 @@ print(5 ** 3)
 Write a loop that calculates the same result as `5 ** 3` using
 multiplication (and without exponentiation).
 
+## Try it
+
 
 ## Solution
 
@@ -328,6 +334,8 @@ print(result)
 Write a loop that calculates the sum of elements in a list
 by adding each element and printing the final value,
 so `[124, 402, 36]` prints 562
+
+## Try it
 
 
 ## Solution

@@ -292,16 +292,17 @@ apples = 5
 distance = 10.5
 ~~~
 
-<!-- ## Solution
+
+## Solution
+
 ~~~python
 print(type(planet))
 print(type(apples))
 print(type(distance))
 ~~~
 
-~~~
+~~~txt
 <class 'str'>
 <class 'int'>
 <class 'float'>
-~~~ -->
-
+~~~
