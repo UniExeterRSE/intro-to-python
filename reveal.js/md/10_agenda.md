@@ -14,6 +14,6 @@
 
 ### 12:00 Data analysis 2 
 
-### 12:10 
+### 12:30 Next steps
 
 ### 12:45 END
